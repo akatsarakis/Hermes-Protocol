@@ -948,11 +948,11 @@
 \@x{ {\VARIABLES}\@s{8.2} msgs ,\,}%
 \@x{\@s{59.62} nodeTS ,\,}%
 \@x{\@s{59.62} nodeState ,\,}%
+\@x{\@s{59.62} nodeRcvedAcks ,\,}%
 \@x{\@s{59.62} nodeLastWriter ,\,}%
-\@x{\@s{59.62} issuedWriteTS ,\,}%
-\@x{\@s{59.62} aliveNodes ,\,}%
-\@x{\@s{59.62} receivedAcks}%
-\@pvspace{8.0pt}%
+\@x{\@s{59.62} nodeLastWriteTS ,\,}%
+\@x{\@s{59.62} aliveNodes}%
+\@pvspace{16.0pt}%
 \@x{}%
 \@y{\@s{0}%
  The consistent invariant: all alive nodes in valid state should have the
@@ -964,8 +964,12 @@
  nodeState [ k ] \.{\neq}\@w{valid}}%
 \@x{\@s{112.67} \.{\lor} nodeState [ s ]\@s{0.76} \.{\neq}\@w{valid}}%
 \@x{\@s{112.67} \.{\lor} nodeTS [ k ] \.{=} nodeTS [ s ]}%
-\@pvspace{8.0pt}%
-\@x{ HMessage \.{\defeq}}%
+\@pvspace{16.0pt}%
+\@x{ HMessage \.{\defeq}\@s{4.1}}%
+\@y{\@s{0}%
+ Messages exchanged by the Protocol
+}%
+\@xx{}%
  \@x{\@s{16.4} [ type \.{:} \{\@w{INV} ,\,\@w{ACK} \} ,\, sender\@s{16.11}
  \.{:} NODES ,\,}%
 \@x{\@s{124.11} version\@s{13.35} \.{:} 0 \.{\dotdot} MAX\_VERSION ,\,}%
@@ -982,92 +986,138 @@
 \@xx{}%
 \@x{\@s{16.4} \.{\land}\@s{17.17} msgs\@s{41.21} \.{\subseteq} HMessage}%
 \@x{\@s{16.4} \.{\land}\@s{17.17} aliveNodes\@s{16.40} \.{\subseteq} NODES}%
- \@x{\@s{16.4} \.{\land} \A\, n \.{\in} NODES \.{:} receivedAcks [ n ]
+ \@x{\@s{16.4} \.{\land} \A\, n \.{\in} NODES \.{:} nodeRcvedAcks [ n ]
  \.{\subseteq} ( NODES \.{\,\backslash\,} \{ n \} )}%
- \@x{\@s{16.4} \.{\land}\@s{4.1} nodeLastWriter \.{\in} [ NODES\@s{0.37}
+ \@x{\@s{16.4} \.{\land}\@s{4.1} nodeLastWriter\@s{8.68} \.{\in} [ NODES
  \.{\rightarrow} NODES ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} issuedWriteTS\@s{4.1} \.{\in} [ NODES
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriteTS \.{\in} [ NODES
  \.{\rightarrow} [ version\@s{13.35} \.{:} 0 \.{\dotdot} MAX\_VERSION ,\,}%
-\@x{\@s{171.38} tieBreaker \.{:} NODES\@s{32.8} ] ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS\@s{34.79} \.{\in} [ NODES\@s{0.37}
+\@x{\@s{179.69} tieBreaker \.{:} NODES\@s{32.8} ] ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS\@s{43.47} \.{\in} [ NODES
  \.{\rightarrow} [ version\@s{13.35} \.{:} 0 \.{\dotdot} MAX\_VERSION ,\,}%
-\@x{\@s{171.38} tieBreaker \.{:} NODES\@s{32.8} ] ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState\@s{26.04} \.{\in} [ NODES\@s{0.37}
+\@x{\@s{179.69} tieBreaker \.{:} NODES\@s{32.8} ] ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState\@s{34.72} \.{\in} [ NODES
  \.{\rightarrow} \{\@w{valid} ,\,\@w{invalid} ,\,\@w{invalid\_write} ,\,}%
-\@x{\@s{173.61}\@w{write} ,\,\@w{replay} \} ]}%
+\@x{\@s{181.91}\@w{write} ,\,\@w{replay} \} ]}%
 \@pvspace{8.0pt}%
 \@x{ HInit \.{\defeq}}%
 \@y{\@s{0}%
  The initial predicate
 }%
 \@xx{}%
-\@x{\@s{16.4} \.{\land}\@s{4.1} msgs\@s{51.02} \.{=} \{ \}}%
-\@x{\@s{16.4} \.{\land}\@s{4.09} aliveNodes\@s{26.21} \.{=} NODES}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} receivedAcks\@s{18.42} \.{=} [ n \.{\in}
+\@x{\@s{16.4} \.{\land}\@s{4.1} msgs\@s{55.60} \.{=} \{ \}}%
+\@x{\@s{16.4} \.{\land}\@s{4.09} aliveNodes\@s{30.79} \.{=} NODES}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeRcvedAcks\@s{11.23} \.{=} [ n \.{\in}
  NODES \.{\mapsto} \{ \} ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState\@s{30.14} \.{=} [ n \.{\in} NODES
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState\@s{34.72} \.{=} [ n \.{\in} NODES
  \.{\mapsto}\@w{valid} ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriter\@s{4.1} \.{=} [ n \.{\in}
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriter\@s{8.68} \.{=} [ n \.{\in}
  NODES \.{\mapsto} {\CHOOSE} k \.{\in} NODES \.{:}}%
-\@x{\@s{192.05} \A\, m \.{\in} NODES \.{:} k \.{\leq} m ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS\@s{38.89} \.{=} [ n \.{\in} NODES
+\@x{\@s{196.63} \A\, m \.{\in} NODES \.{:} k \.{\leq} m ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS\@s{43.47} \.{=} [ n \.{\in} NODES
  \.{\mapsto} [ version \.{\mapsto} 0 ,\,}%
-\@x{\@s{194.83} tieBreaker \.{\mapsto}}%
-\@x{\@s{198.93} {\CHOOSE} k \.{\in} NODES \.{:}}%
-\@x{\@s{203.03} \A\, m \.{\in} NODES \.{:} k \.{\leq} m ] ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} issuedWriteTS\@s{12.29} \.{=} [ n \.{\in}
- NODES \.{\mapsto} [ version \.{\mapsto} 0 ,\,}%
-\@x{\@s{199.31} tieBreaker \.{\mapsto}}%
-\@x{\@s{203.41} {\CHOOSE} k \.{\in} NODES \.{:}}%
-\@x{\@s{207.51} \A\, m \.{\in} NODES \.{:} k \.{\leq} m ] ]}%
+\@x{\@s{199.41} tieBreaker \.{\mapsto}}%
+\@x{\@s{203.51} {\CHOOSE} k \.{\in} NODES \.{:}}%
+\@x{\@s{207.61} \A\, m \.{\in} NODES \.{:} k \.{\leq} m ] ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriteTS \.{=} [ n \.{\in} NODES
+ \.{\mapsto} [ version \.{\mapsto} 0 ,\,}%
+\@x{\@s{203.51} tieBreaker \.{\mapsto}}%
+\@x{\@s{207.61} {\CHOOSE} k \.{\in} NODES \.{:}}%
+\@x{\@s{211.71} \A\, m \.{\in} NODES \.{:} k \.{\leq} m ] ]}%
 \@x{}\midbar\@xx{}%
+\@x{}%
+\@y{\@s{0}%
+ A buffer maintaining all network messages. Messages are only appended to
+ this variable (not
+}%
+\@xx{}%
+\@x{}%
+\@y{\@s{0}%
+ removed once delivered) intentionally to check protocols tolerance in
+ dublicates and reorderings
+}%
+\@xx{}%
 \@x{ send ( m ) \.{\defeq} msgs \.{'} \.{=} msgs \.{\cup} \{ m \}}%
 \@pvspace{8.0pt}%
- \@x{ receivedAllAcks ( n ) \.{\defeq} receivedAcks [ n ] \.{=} NODES
+\@x{}%
+\@y{\@s{0}%
+ Check if all acknowledgments for a write have been received
+}%
+\@xx{}%
+ \@x{ receivedAllAcks ( n ) \.{\defeq} nodeRcvedAcks [ n ] \.{=} NODES
  \.{\,\backslash\,} \{ n \}}%
 \@pvspace{8.0pt}%
-\@x{ equalTS ( v1 ,\, tb1 ,\, v2 ,\, tb2 ) \.{\defeq}}%
+\@x{ equalTS ( v1 ,\, tb1 ,\, v2 ,\, tb2 ) \.{\defeq}\@s{4.1}}%
+\@y{\@s{0}%
+ Timestamp equality
+}%
+\@xx{}%
 \@x{\@s{16.4} \.{\land}\@s{8.18} v1 \.{=} v2}%
 \@x{\@s{16.4} \.{\land}\@s{8.18} tb1 \.{=} tb2}%
 \@pvspace{8.0pt}%
 \@x{ greaterTS ( v1 ,\, tb1 ,\, v2 ,\, tb2 ) \.{\defeq}}%
+\@y{\@s{0}%
+ Timestamp comparison
+}%
+\@xx{}%
 \@x{\@s{16.4} \.{\lor} v1 \.{>} v2}%
 \@x{\@s{16.4} \.{\lor} \.{\land}\@s{8.2} v1 \.{=} v2}%
 \@x{\@s{27.51} \.{\land}\@s{4.1} tb1\@s{1.22} \.{>} tb2}%
 \@pvspace{8.0pt}%
 \@x{ isAlive ( n ) \.{\defeq} n \.{\in} aliveNodes}%
 \@pvspace{8.0pt}%
-\@x{ nodeFailure \.{\defeq}}%
+\@x{ nodeFailure ( n ) \.{\defeq}}%
+\@y{\@s{0}%
+ Emulate a node failure
+}%
+\@xx{}%
+\@x{}%
+\@y{\@s{7.5}%
+ Make sure that there are atleast 3 alive nodes before killing a node
+}%
+\@xx{}%
+ \@x{\@s{16.4} \.{\land} \E\, k ,\, m \.{\in} aliveNodes \.{:} \.{\land}
+ k\@s{3.26} \.{\neq} n}%
+\@x{\@s{123.71} \.{\land} m \.{\neq} n}%
+\@x{\@s{123.71} \.{\land} m \.{\neq} k}%
  \@x{\@s{16.4} \.{\land} aliveNodes \.{'} \.{=} aliveNodes \.{\,\backslash\,}
- \{ {\CHOOSE} k \.{\in} aliveNodes \.{:} \A\, m \.{\in} aliveNodes \.{:} k
- \.{\leq} m \}}%
+ \{ n \}}%
  \@x{\@s{16.4} \.{\land} {\UNCHANGED} {\langle} msgs ,\, nodeState ,\, nodeTS
- ,\, nodeLastWriter ,\, issuedWriteTS ,\, receivedAcks {\rangle}}%
+ ,\, nodeLastWriter ,\,}%
+\@x{\@s{89.98} nodeLastWriteTS ,\, nodeRcvedAcks {\rangle}}%
 \@x{}\midbar\@xx{}%
-\@x{ HRead ( n ) \.{\defeq}}%
+\@x{ HRead ( n ) \.{\defeq}\@s{4.1}}%
+\@y{\@s{0}%
+ Execute a read
+}%
+\@xx{}%
 \@x{\@s{16.4} \.{\land} nodeState [ n ] \.{=}\@w{valid}}%
  \@x{\@s{16.4} \.{\land} {\UNCHANGED} {\langle} msgs ,\, nodeTS ,\, nodeState
  ,\, nodeLastWriter ,\,}%
-\@x{\@s{89.98} aliveNodes ,\, issuedWriteTS ,\, receivedAcks {\rangle}}%
+\@x{\@s{89.98} aliveNodes ,\, nodeLastWriteTS ,\, nodeRcvedAcks {\rangle}}%
 \@pvspace{8.0pt}%
 \@x{ HWrite ( n ) \.{\defeq}}%
+\@y{\@s{0}%
+ Execute a write
+}%
+\@xx{}%
  \@x{\@s{16.4} \.{\land}\@s{4.1} nodeState [ n ]\@s{26.09} \.{\in}
- \{\@w{valid} \}}%
+ \{\@w{valid} ,\,\@w{invalid} \}}%
 \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS [ n ] . version \.{<} MAX\_VERSION}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} receivedAcks \.{'}\@s{23.51} \.{=} [
- receivedAcks\@s{8.2} {\EXCEPT} {\bang} [ n ]\@s{6.12} \.{=} \{ \} ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriter \.{'}\@s{9.19} \.{=} [
- nodeLastWriter {\EXCEPT} {\bang} [ n ] \.{=} n ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState \.{'}\@s{35.23} \.{=} [
- nodeState\@s{20.5} {\EXCEPT} {\bang} [ n ]\@s{5.54} \.{=}\@w{write} ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS \.{'}\@s{43.98} \.{=} [
- nodeTS\@s{32.8} {\EXCEPT} {\bang} [ n ] . version\@s{12.29} \.{=}}%
-\@x{\@s{256.44} nodeTS [ n ] . version \.{+} 1 ,\,}%
-\@x{\@s{237.15} {\bang} [ n ] . tieBreaker \.{=} n ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} issuedWriteTS \.{'}\@s{12.91} \.{=} [
- issuedWriteTS\@s{4.1} {\EXCEPT} {\bang} [ n ] . version\@s{10.98} \.{=}}%
-\@x{\@s{258.81} nodeTS [ n ] . version \.{+} 1 ,\,}%
-\@x{\@s{239.52} {\bang} [ n ] . tieBreaker \.{=} n ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeRcvedAcks \.{'}\@s{15.33} \.{=} [
+ nodeRcvedAcks\@s{8.2} {\EXCEPT} {\bang} [ n ] \.{=} \{ \} ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriter \.{'}\@s{12.78} \.{=} [
+ nodeLastWriter\@s{4.1} {\EXCEPT} {\bang} [ n ]\@s{1.54} \.{=} n ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState \.{'}\@s{38.82} \.{=} [
+ nodeState\@s{24.59} {\EXCEPT} {\bang} [ n ]\@s{7.08} \.{=}\@w{write} ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeTS \.{'}\@s{47.57} \.{=} [
+ nodeTS\@s{36.89} {\EXCEPT} {\bang} [ n ] . version\@s{12.29} \.{=}}%
+\@x{\@s{261.35} nodeTS [ n ] . version \.{+} 1 ,\,}%
+\@x{\@s{244.84} {\bang} [ n ] . tieBreaker \.{=} n ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriteTS \.{'}\@s{0.51} \.{=} [
+ nodeLastWriteTS {\EXCEPT} {\bang} [ n ] . version \.{=}}%
+\@x{\@s{264.34} nodeTS [ n ] . version \.{+} 1 ,\,}%
+\@x{\@s{247.83} {\bang} [ n ] . tieBreaker \.{=} n ]}%
  \@x{\@s{16.4} \.{\land}\@s{4.09} send ( [ type\@s{31.39} \.{\mapsto}\@w{INV}
  ,\,}%
 \@x{\@s{58.73} sender\@s{20.21} \.{\mapsto} n ,\,}%
@@ -1077,16 +1127,20 @@
 \@x{\@s{16.4} \.{\land}\@s{4.09} {\UNCHANGED} {\langle} aliveNodes {\rangle}}%
 \@pvspace{8.0pt}%
 \@x{ HReplayWrite ( n ) \.{\defeq}}%
+\@y{\@s{0}%
+ Execute a write-replay
+}%
+\@xx{}%
 \@x{\@s{16.4} \.{\land}\@s{4.1} nodeState [ n ] \.{=}\@w{invalid}}%
 \@x{\@s{16.4} \.{\land}\@s{4.09} {\lnot} isAlive ( nodeLastWriter [ n ] )}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriter \.{'}\@s{4.1} \.{=} [
- nodeLastWriter {\EXCEPT} {\bang} [ n ]\@s{0.37} \.{=} n ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState \.{'}\@s{30.51} \.{=} [
- nodeState\@s{20.5} {\EXCEPT} {\bang} [ n ]\@s{5.54} \.{=}\@w{replay} ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} receivedAcks \.{'}\@s{18.79} \.{=} [
- receivedAcks\@s{8.2} {\EXCEPT} {\bang} [ n ]\@s{6.12} \.{=} \{ \} ]}%
- \@x{\@s{16.4} \.{\land}\@s{4.09} issuedWriteTS \.{'}\@s{7.82} \.{=} [
- issuedWriteTS\@s{4.1} {\EXCEPT} {\bang} [ n ] \.{=} nodeTS [ n ] ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriter \.{'}\@s{8.68} \.{=} [
+ nodeLastWriter\@s{8.2} {\EXCEPT} {\bang} [ n ]\@s{4.58} \.{=} n ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeState \.{'}\@s{34.72} \.{=} [
+ nodeState\@s{28.7} {\EXCEPT} {\bang} [ n ]\@s{10.12} \.{=}\@w{replay} ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeRcvedAcks \.{'}\@s{11.23} \.{=} [
+ nodeRcvedAcks\@s{12.29} {\EXCEPT} {\bang} [ n ]\@s{3.03} \.{=} \{ \} ]}%
+ \@x{\@s{16.4} \.{\land}\@s{4.09} nodeLastWriteTS \.{'} \.{=} [
+ nodeLastWriteTS\@s{4.1} {\EXCEPT} {\bang} [ n ] \.{=} nodeTS [ n ] ]}%
  \@x{\@s{16.4} \.{\land}\@s{4.09} send ( [ type\@s{27.29} \.{\mapsto}\@w{INV}
  ,\,}%
 \@x{\@s{58.73} sender\@s{16.11} \.{\mapsto} n ,\,}%
@@ -1095,25 +1149,33 @@
  \@x{\@s{16.4} \.{\land}\@s{4.09} {\UNCHANGED} {\langle} nodeTS ,\, aliveNodes
  {\rangle}}%
 \@x{}\midbar\@xx{}%
-\@x{ HRcvAck ( n ) \.{\defeq}}%
+\@x{ HRcvAck ( n ) \.{\defeq}\@s{8.2}}%
+\@y{\@s{0}%
+ Process a received acknowledment
+}%
+\@xx{}%
 \@x{\@s{16.4} \E\, m \.{\in} msgs \.{:}}%
 \@x{\@s{27.72} \.{\land} m . type \.{=}\@w{ACK}}%
 \@x{\@s{27.72} \.{\land} m . sender \.{\neq} n}%
-\@x{\@s{27.72} \.{\land} m . sender \.{\notin} receivedAcks [ n ]}%
+\@x{\@s{27.72} \.{\land} m . sender \.{\notin} nodeRcvedAcks [ n ]}%
 \@x{\@s{27.72} \.{\land} equalTS ( m . version ,\,}%
 \@x{\@s{78.41} m . tieBreaker ,\,}%
-\@x{\@s{78.41} issuedWriteTS [ n ] . version ,\,}%
-\@x{\@s{78.41} issuedWriteTS [ n ] . tieBreaker )}%
+\@x{\@s{78.41} nodeLastWriteTS [ n ] . version ,\,}%
+\@x{\@s{78.41} nodeLastWriteTS [ n ] . tieBreaker )}%
  \@x{\@s{27.72} \.{\land} nodeState [ n ] \.{\in} \{\@w{write}
  ,\,\@w{invalid\_write} ,\,\@w{replay} \}}%
- \@x{\@s{27.72} \.{\land} receivedAcks \.{'} \.{=} [ receivedAcks {\EXCEPT}
+ \@x{\@s{27.72} \.{\land} nodeRcvedAcks \.{'} \.{=} [ nodeRcvedAcks {\EXCEPT}
  {\bang} [ n ] \.{=}}%
-\@x{\@s{187.01} receivedAcks [ n ] \.{\cup} \{ m . sender \} ]}%
+\@x{\@s{202.34} nodeRcvedAcks [ n ] \.{\cup} \{ m . sender \} ]}%
  \@x{\@s{27.72} \.{\land} {\UNCHANGED} {\langle} msgs ,\, nodeLastWriter ,\,
- issuedWriteTS ,\,}%
+ nodeLastWriteTS ,\,}%
 \@x{\@s{101.31} aliveNodes ,\, nodeTS ,\, nodeState {\rangle}}%
 \@pvspace{8.0pt}%
 \@x{ HSendVals ( n ) \.{\defeq}}%
+\@y{\@s{0}%
+ Send validations once received acknowledments from all alive nodes
+}%
+\@xx{}%
  \@x{\@s{16.4} \.{\land} nodeState [ n ] \.{\in} \{\@w{write} ,\,\@w{replay}
  \}}%
 \@x{\@s{16.4} \.{\land} receivedAllAcks ( n )}%
@@ -1123,24 +1185,33 @@
 \@x{\@s{54.63} version\@s{17.45} \.{\mapsto} nodeTS [ n ] . version ,\,}%
 \@x{\@s{54.63} tieBreaker\@s{4.10} \.{\mapsto} nodeTS [ n ] . tieBreaker ] )}%
  \@x{\@s{16.4} \.{\land} {\UNCHANGED} {\langle} nodeTS ,\, nodeLastWriter ,\,
- issuedWriteTS ,\,}%
-\@x{\@s{89.98} aliveNodes ,\, receivedAcks {\rangle}}%
+ nodeLastWriteTS ,\,}%
+\@x{\@s{89.98} aliveNodes ,\, nodeRcvedAcks {\rangle}}%
 \@pvspace{8.0pt}%
-\@x{ HCoordinatorActions ( n ) \.{\defeq}}%
-\@x{\@s{16.4} \.{\lor} HRead ( n )}%
-\@x{\@s{16.4} \.{\lor} HReplayWrite ( n )}%
+\@x{ HCoordinatorActions ( n ) \.{\defeq}\@s{8.2}}%
 \@y{\@s{0}%
- this is for failures
+ Actions of a read/write coordinator
 }%
 \@xx{}%
+\@x{\@s{16.4} \.{\lor} HRead ( n )}%
+\@x{\@s{16.4} \.{\lor} HReplayWrite ( n )}%
 \@x{\@s{16.4} \.{\lor} HWrite ( n )}%
 \@x{\@s{16.4} \.{\lor} HRcvAck ( n )}%
 \@x{\@s{16.4} \.{\lor} HSendVals ( n )}%
 \@x{}\midbar\@xx{}%
-\@x{ HRcvInv ( n ) \.{\defeq}}%
+\@x{ HRcvInv ( n ) \.{\defeq}\@s{4.1}}%
+\@y{\@s{0}%
+ Process a received invalidation
+}%
+\@xx{}%
 \@x{\@s{16.4} \E\, m \.{\in} msgs \.{:}}%
 \@x{\@s{27.72} \.{\land} m . type \.{=}\@w{INV}}%
 \@x{\@s{27.72} \.{\land} m . sender \.{\neq} n}%
+\@x{\@s{27.72}}%
+\@y{\@s{0}%
+ always acknowledge a received invalidation (irrelevant to the timestamp)
+}%
+\@xx{}%
 \@x{\@s{27.72} \.{\land} send ( [ type\@s{27.29} \.{\mapsto}\@w{ACK} ,\,}%
 \@x{\@s{65.95} sender\@s{16.11} \.{\mapsto} n ,\,}%
 \@x{\@s{65.95} version\@s{13.35} \.{\mapsto} m . version ,\,}%
@@ -1168,10 +1239,14 @@
 \@x{\@s{115.22} nodeTS [ n ] . tieBreaker )}%
  \@x{\@s{49.94} \.{\land} {\UNCHANGED} {\langle} nodeState ,\, nodeTS ,\,
  nodeLastWriter {\rangle}}%
- \@x{\@s{27.72} \.{\land} {\UNCHANGED} {\langle} issuedWriteTS ,\, aliveNodes
- ,\, receivedAcks {\rangle}}%
+ \@x{\@s{27.72} \.{\land} {\UNCHANGED} {\langle} nodeLastWriteTS ,\,
+ aliveNodes ,\, nodeRcvedAcks {\rangle}}%
 \@pvspace{8.0pt}%
-\@x{ HRcvVal ( n ) \.{\defeq}}%
+\@x{ HRcvVal ( n ) \.{\defeq}\@s{8.2}}%
+\@y{\@s{0}%
+ Process a received validation
+}%
+\@xx{}%
 \@x{\@s{16.4} \E\, m \.{\in} msgs \.{:}}%
 \@x{\@s{27.72} \.{\land} nodeState [ n ] \.{\neq}\@w{valid}}%
 \@x{\@s{27.72} \.{\land} m . type \.{=}\@w{VAL}}%
@@ -1182,37 +1257,30 @@
  \@x{\@s{27.72} \.{\land} nodeState \.{'} \.{=} [ nodeState {\EXCEPT} {\bang}
  [ n ] \.{=}\@w{valid} ]}%
  \@x{\@s{27.72} \.{\land} {\UNCHANGED} {\langle} msgs ,\, nodeTS ,\,
- nodeLastWriter ,\, issuedWriteTS ,\,}%
-\@x{\@s{101.31} aliveNodes ,\, receivedAcks {\rangle}}%
+ nodeLastWriter ,\, nodeLastWriteTS ,\,}%
+\@x{\@s{101.31} aliveNodes ,\, nodeRcvedAcks {\rangle}}%
 \@pvspace{8.0pt}%
-\@x{ HFollowerActions ( n ) \.{\defeq}}%
+\@x{ HFollowerActions ( n ) \.{\defeq}\@s{4.1}}%
+\@y{\@s{0}%
+ Actions of a write follower
+}%
+\@xx{}%
 \@x{\@s{16.4} \.{\lor} HRcvInv ( n )}%
 \@x{\@s{16.4} \.{\lor} HRcvVal ( n )}%
 \@x{}\midbar\@xx{}%
 \@x{ HNext \.{\defeq}}%
-\@x{\@s{16.4} \.{\lor} \E\, n \.{\in} NODES \.{:}}%
-\@x{\@s{41.12} \.{\lor} HFollowerActions ( n )}%
-\@x{\@s{41.12} \.{\lor} HCoordinatorActions ( n )}%
-\@x{\@s{16.4} \.{\lor} nodeFailure}%
 \@y{\@s{0}%
- this is for failures
+ Modeling \ensuremath{Hermes} protocol (Coordinator and Follower actions
+ while emulating failures)
+}%
+\@xx{}%
+\@x{\@s{16.4} \E\, n \.{\in} aliveNodes \.{:}}%
+\@x{\@s{42.31} \.{\lor} HFollowerActions ( n )}%
+\@x{\@s{42.31} \.{\lor} HCoordinatorActions ( n )}%
+\@x{\@s{42.31} \.{\lor} nodeFailure ( n )}%
+\@y{\@s{0}%
+ emulate node failures
 }%
 \@xx{}%
 \@x{}\bottombar\@xx{}%
-\setboolean{shading}{false}
-\begin{lcom}{0}%
-\begin{cpar}{0}{F}{F}{0}{0}{}%
-\ensuremath{\.{\,\backslash\,}}* Modification History
-\end{cpar}%
-\begin{cpar}{0}{F}{F}{0}{0}{}%
- \ensuremath{\.{\,\backslash\,}}* Last modified \ensuremath{Fri}
- \ensuremath{Jul} 13 15:20:40 \ensuremath{BST} 2018 by \ensuremath{akatsarakis
-}%
-\end{cpar}%
-\begin{cpar}{0}{F}{F}{0}{0}{}%
- \ensuremath{\.{\,\backslash\,}}* Created \ensuremath{Tue} \ensuremath{Jul} 10
- 09:43:12 \ensuremath{BST} 2018 by \ensuremath{akatsarakis
-}%
-\end{cpar}%
-\end{lcom}%
 \end{document}

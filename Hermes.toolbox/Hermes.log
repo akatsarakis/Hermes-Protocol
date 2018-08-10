@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.9.25)  13 JUL 2018 15:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.9.25)  7 AUG 2018 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,50 +121,49 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (20.15115pt too wide) in paragraph at lines 1043--1045
+Overfull \hbox (1.30374pt too wide) in paragraph at lines 1034--1040
+[][][][] 
+ []
+
+[2]
+Overfull \hbox (5.38647pt too wide) in paragraph at lines 1115--1116
 [][] 
  []
 
 
-Overfull \hbox (50.8444pt too wide) in paragraph at lines 1045--1046
+Overfull \hbox (8.37646pt too wide) in paragraph at lines 1119--1120
 [][] 
  []
 
-
-Overfull \hbox (0.47647pt too wide) in paragraph at lines 1065--1066
-[][] 
+[3] [4]
+Overfull \hbox (17.23586pt too wide) in paragraph at lines 1271--1277
+[][][][] 
  []
 
-
-Overfull \hbox (2.84647pt too wide) in paragraph at lines 1069--1070
-[][] 
- []
-
-[2] [3] [4] [5] (./Hermes.aux) ) 
+[5] (./Hermes.aux) ) 
 Here is how much of TeX's memory you used:
  1286 strings out of 493304
  15643 string characters out of 6139871
- 81046 words of memory out of 5000000
+ 83046 words of memory out of 5000000
  4778 multiletter control sequences out of 15000+600000
  8810 words of font info for 34 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 23i,16n,25p,231b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti8.pfb>
-Output written on Hermes.pdf (5 pages, 129791 bytes).
+ 23i,16n,19p,231b,141s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti8.pfb>
+Output written on Hermes.pdf (5 pages, 123461 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

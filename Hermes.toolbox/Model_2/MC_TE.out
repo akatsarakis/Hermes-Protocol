@@ -7,8 +7,8 @@ Running breadth-first search Model-Checking with 2 workers on 4 cores with 1180M
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
-Parsing file /home/akatsarakis/Dropbox/TLA_plus/Hermes/Hermes.toolbox/Model_2/MC.tla
-Parsing file /home/akatsarakis/Dropbox/TLA_plus/Hermes/Hermes.toolbox/Model_2/Hermes.tla
+Parsing file /home/akatsarakis/Dropbox/CDT-Edinburgh/PhD/projects/hermes/tla/Hermes/Hermes.toolbox/Model_2/MC.tla
+Parsing file /home/akatsarakis/Dropbox/CDT-Edinburgh/PhD/projects/hermes/tla/Hermes/Hermes.toolbox/Model_2/Hermes.tla
 Parsing file /home/akatsarakis/Desktop/TLA_plus/toolbox/plugins/org.lamport.tlatools_1.0.0.201801291236/tla2sany/StandardModules/TLC.tla
 Parsing file /home/akatsarakis/Desktop/TLA_plus/toolbox/plugins/org.lamport.tlatools_1.0.0.201801291236/tla2sany/StandardModules/Integers.tla
 Parsing file /home/akatsarakis/Desktop/TLA_plus/toolbox/plugins/org.lamport.tlatools_1.0.0.201801291236/tla2sany/StandardModules/Naturals.tla
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2018-07-12 17:11:14)
+Starting... (2018-07-20 17:15:20)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -32,2295 +32,2109 @@ Computing initial states...
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(18) at 2018-07-12 17:11:18: 545099 states generated (545,099 s/min), 73568 distinct states found (73,568 ds/min), 25258 states left on queue.
+Progress(15) at 2018-07-20 17:15:24: 590255 states generated (590,255 s/min), 105343 distinct states found (105,343 ds/min), 40810 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(26) at 2018-07-12 17:12:18: 13949956 states generated (13,404,857 s/min), 1479477 distinct states found (1,405,909 ds/min), 502859 states left on queue.
+Progress(23) at 2018-07-20 17:16:24: 15047380 states generated (14,457,125 s/min), 1905806 distinct states found (1,800,463 ds/min), 506262 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(27) at 2018-07-12 17:13:18: 27013487 states generated (13,063,531 s/min), 2630964 distinct states found (1,151,487 ds/min), 817924 states left on queue.
+Progress(25) at 2018-07-20 17:17:24: 28761147 states generated (13,713,767 s/min), 3399273 distinct states found (1,493,467 ds/min), 823837 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(28) at 2018-07-12 17:14:18: 39955570 states generated (12,942,083 s/min), 3681680 distinct states found (1,050,716 ds/min), 1064469 states left on queue.
+Progress(26) at 2018-07-20 17:18:24: 42165133 states generated (13,403,986 s/min), 4781491 distinct states found (1,382,218 ds/min), 1103338 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:14:18
+The coverage statistics at 2018-07-20 17:18:24
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 244767
+  line 102, col 21 to line 102, col 30 of module Hermes: 693427
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 244767
+  line 107, col 9 to line 107, col 61 of module Hermes: 335500
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 244767
+  line 108, col 9 to line 108, col 68 of module Hermes: 335500
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 244767
+  line 109, col 9 to line 109, col 62 of module Hermes: 335499
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 244767
+  line 110, col 9 to line 110, col 69 of module Hermes: 335499
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 3983228
+  line 115, col 21 to line 115, col 26 of module Hermes: 335500
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 3983228
+  line 115, col 29 to line 115, col 38 of module Hermes: 335499
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 3983228
+  line 127, col 12 to line 128, col 81 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 3983228
+  line 129, col 24 to line 129, col 27 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 3983228
+  line 129, col 30 to line 129, col 43 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 3983228
+  line 129, col 46 to line 129, col 60 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 3983228
+  line 130, col 24 to line 130, col 33 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 199692
+  line 130, col 36 to line 130, col 41 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 199691
+  line 130, col 44 to line 130, col 52 of module Hermes: 4192908
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 199691
+  line 135, col 8 to line 135, col 60 of module Hermes: 198867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 199691
+  line 139, col 20 to line 139, col 25 of module Hermes: 198867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 199691
+  line 139, col 28 to line 139, col 41 of module Hermes: 198867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 199691
+  line 139, col 44 to line 139, col 58 of module Hermes: 198867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 2474885
+  line 140, col 20 to line 140, col 29 of module Hermes: 198867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 2474880
+  line 140, col 32 to line 140, col 44 of module Hermes: 198867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 999786
+  line 161, col 18 to line 161, col 74 of module Hermes: 2464695
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 1475094
+  line 162, col 18 to line 163, col 73 of module Hermes: 2464695
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 28340828
+  line 165, col 24 to line 165, col 71 of module Hermes: 786735
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 28340844
+  line 167, col 24 to line 167, col 77 of module Hermes: 1677960
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 28340847
+  line 172, col 30 to line 172, col 38 of module Hermes: 27021958
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 30815733
+  line 172, col 41 to line 172, col 46 of module Hermes: 27021962
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 30815729
+  line 172, col 49 to line 172, col 62 of module Hermes: 27021953
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 30815716
+  line 173, col 24 to line 173, col 38 of module Hermes: 29486659
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 699131
+  line 173, col 41 to line 173, col 50 of module Hermes: 29486659
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 699131
+  line 173, col 53 to line 173, col 65 of module Hermes: 29486659
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 699130
+  line 183, col 12 to line 183, col 57 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 699130
+  line 184, col 24 to line 184, col 27 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 699130
+  line 184, col 30 to line 184, col 35 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 699130
+  line 184, col 38 to line 184, col 51 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 699131
+  line 184, col 54 to line 184, col 68 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 31866709
+  line 185, col 24 to line 185, col 33 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 2618699
+  line 185, col 36 to line 185, col 48 of module Hermes: 707674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 2618700
+  line 58, col 12 to line 58, col 34 of module Hermes: 30714453
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 2618700
+  line 77, col 8 to line 77, col 37 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 2618699
+  line 78, col 20 to line 78, col 23 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 2618699
+  line 78, col 26 to line 78, col 34 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 2618700
+  line 78, col 37 to line 78, col 42 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 2618699
+  line 78, col 45 to line 78, col 58 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 813849
+  line 79, col 20 to line 79, col 34 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 813849
+  line 79, col 37 to line 79, col 49 of module Hermes: 5688090
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 813849
+  line 83, col 20 to line 83, col 23 of module Hermes: 862164
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 813849
+  line 83, col 26 to line 83, col 31 of module Hermes: 862164
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 813849
+  line 83, col 34 to line 83, col 42 of module Hermes: 862164
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 813849
+  line 83, col 45 to line 83, col 58 of module Hermes: 862164
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 813849
+  line 84, col 20 to line 84, col 29 of module Hermes: 862164
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 606535
+  line 84, col 32 to line 84, col 46 of module Hermes: 862164
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 606535
+  line 84, col 49 to line 84, col 61 of module Hermes: 862163
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 606535
+  line 89, col 9 to line 89, col 62 of module Hermes: 693427
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 606536
+  line 90, col 9 to line 90, col 61 of module Hermes: 693427
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 606535
+  line 91, col 9 to line 91, col 67 of module Hermes: 693427
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 606535
+  line 92, col 9 to line 94, col 72 of module Hermes: 693427
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 244767
+  line 95, col 9 to line 97, col 72 of module Hermes: 693427
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(29) at 2018-07-12 17:15:18: 52968741 states generated (13,013,171 s/min), 4672256 distinct states found (990,576 ds/min), 1265178 states left on queue.
+Progress(27) at 2018-07-20 17:19:24: 55200070 states generated (13,034,937 s/min), 6059034 distinct states found (1,277,543 ds/min), 1324388 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(29) at 2018-07-12 17:16:18: 65798146 states generated (12,829,405 s/min), 5625578 distinct states found (953,322 ds/min), 1462441 states left on queue.
+Progress(28) at 2018-07-20 17:20:24: 68107673 states generated (12,907,603 s/min), 7267053 distinct states found (1,208,019 ds/min), 1502859 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(30) at 2018-07-12 17:17:18: 78586699 states generated (12,788,553 s/min), 6507582 distinct states found (882,004 ds/min), 1581033 states left on queue.
+Progress(29) at 2018-07-20 17:21:24: 80964129 states generated (12,856,456 s/min), 8437062 distinct states found (1,170,009 ds/min), 1663572 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(30) at 2018-07-12 17:18:18: 91028810 states generated (12,442,111 s/min), 7368382 distinct states found (860,800 ds/min), 1731721 states left on queue.
+Progress(29) at 2018-07-20 17:22:24: 93692030 states generated (12,727,901 s/min), 9579583 distinct states found (1,142,521 ds/min), 1833424 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:18:18
+The coverage statistics at 2018-07-20 17:22:24
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 463956
+  line 102, col 21 to line 102, col 30 of module Hermes: 1124894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 463956
+  line 107, col 9 to line 107, col 61 of module Hermes: 744524
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 463956
+  line 108, col 9 to line 108, col 68 of module Hermes: 744524
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 463956
+  line 109, col 9 to line 109, col 62 of module Hermes: 744524
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 463956
+  line 110, col 9 to line 110, col 69 of module Hermes: 744524
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 8779470
+  line 115, col 21 to line 115, col 26 of module Hermes: 744524
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 8779470
+  line 115, col 29 to line 115, col 38 of module Hermes: 744524
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 8779470
+  line 127, col 12 to line 128, col 81 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 8779470
+  line 129, col 24 to line 129, col 27 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 8779470
+  line 129, col 30 to line 129, col 43 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 8779470
+  line 129, col 46 to line 129, col 60 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 8779470
+  line 130, col 24 to line 130, col 33 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 525126
+  line 130, col 36 to line 130, col 41 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 525126
+  line 130, col 44 to line 130, col 52 of module Hermes: 8578522
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 525126
+  line 135, col 8 to line 135, col 60 of module Hermes: 433167
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 525126
+  line 139, col 20 to line 139, col 25 of module Hermes: 433167
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 525126
+  line 139, col 28 to line 139, col 41 of module Hermes: 433167
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 525126
+  line 139, col 44 to line 139, col 58 of module Hermes: 433167
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 4720243
+  line 140, col 20 to line 140, col 29 of module Hermes: 433167
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 4720243
+  line 140, col 32 to line 140, col 44 of module Hermes: 433167
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 1779779
+  line 161, col 18 to line 161, col 74 of module Hermes: 4811936
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 2940464
+  line 162, col 18 to line 163, col 73 of module Hermes: 4811936
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 66722571
+  line 165, col 24 to line 165, col 71 of module Hermes: 1545636
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 66722571
+  line 167, col 24 to line 167, col 77 of module Hermes: 3266300
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 66722571
+  line 172, col 30 to line 172, col 38 of module Hermes: 63157425
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 71442814
+  line 172, col 41 to line 172, col 46 of module Hermes: 63157426
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 71442814
+  line 172, col 49 to line 172, col 62 of module Hermes: 63157420
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 71442814
+  line 173, col 24 to line 173, col 38 of module Hermes: 67969363
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 1452588
+  line 173, col 41 to line 173, col 50 of module Hermes: 67969368
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 1452588
+  line 173, col 53 to line 173, col 65 of module Hermes: 67969362
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 1452588
+  line 183, col 12 to line 183, col 57 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 1452588
+  line 184, col 24 to line 184, col 27 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 1452588
+  line 184, col 30 to line 184, col 35 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 1452588
+  line 184, col 38 to line 184, col 51 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 1452588
+  line 184, col 54 to line 184, col 68 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 73335044
+  line 185, col 24 to line 185, col 33 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 5636659
+  line 185, col 36 to line 185, col 48 of module Hermes: 1496160
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 5636659
+  line 58, col 12 to line 58, col 34 of module Hermes: 70271947
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 5636659
+  line 77, col 8 to line 77, col 37 of module Hermes: 11404100
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 5636659
+  line 78, col 20 to line 78, col 23 of module Hermes: 11404102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 5636659
+  line 78, col 26 to line 78, col 34 of module Hermes: 11404100
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 5636659
+  line 78, col 37 to line 78, col 42 of module Hermes: 11404104
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 5636659
+  line 78, col 45 to line 78, col 58 of module Hermes: 11404100
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 1825048
+  line 79, col 20 to line 79, col 34 of module Hermes: 11404101
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 1825048
+  line 79, col 37 to line 79, col 49 of module Hermes: 11404102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 1825048
+  line 83, col 20 to line 83, col 23 of module Hermes: 1941574
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 1825048
+  line 83, col 26 to line 83, col 31 of module Hermes: 1941574
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 1825048
+  line 83, col 34 to line 83, col 42 of module Hermes: 1941572
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 1825048
+  line 83, col 45 to line 83, col 58 of module Hermes: 1941575
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 1825048
+  line 84, col 20 to line 84, col 29 of module Hermes: 1941574
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 903148
+  line 84, col 32 to line 84, col 46 of module Hermes: 1941575
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 903148
+  line 84, col 49 to line 84, col 61 of module Hermes: 1941572
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 903148
+  line 89, col 9 to line 89, col 62 of module Hermes: 1124894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 903148
+  line 90, col 9 to line 90, col 61 of module Hermes: 1124894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 903148
+  line 91, col 9 to line 91, col 67 of module Hermes: 1124894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 903148
+  line 92, col 9 to line 94, col 72 of module Hermes: 1124894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 463956
+  line 95, col 9 to line 97, col 72 of module Hermes: 1124894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(31) at 2018-07-12 17:19:18: 103796683 states generated (12,767,873 s/min), 8195627 distinct states found (827,245 ds/min), 1806500 states left on queue.
+Progress(30) at 2018-07-20 17:23:24: 106376685 states generated (12,684,655 s/min), 10647052 distinct states found (1,067,469 ds/min), 1909152 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(31) at 2018-07-12 17:20:18: 116346167 states generated (12,549,484 s/min), 9013071 distinct states found (817,444 ds/min), 1914624 states left on queue.
+Progress(30) at 2018-07-20 17:24:24: 118931192 states generated (12,554,507 s/min), 11726247 distinct states found (1,079,195 ds/min), 2060627 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(32) at 2018-07-12 17:21:18: 128825591 states generated (12,479,424 s/min), 9796819 distinct states found (783,748 ds/min), 1992984 states left on queue.
+Progress(31) at 2018-07-20 17:25:25: 131432286 states generated (12,501,094 s/min), 12723656 distinct states found (997,409 ds/min), 2089581 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(32) at 2018-07-12 17:22:18: 141379881 states generated (12,554,290 s/min), 10556135 distinct states found (759,316 ds/min), 2046229 states left on queue.
+Progress(31) at 2018-07-20 17:26:25: 143779233 states generated (12,346,947 s/min), 13747553 distinct states found (1,023,897 ds/min), 2207824 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:22:18
+The coverage statistics at 2018-07-20 17:26:25
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 636181
+  line 102, col 21 to line 102, col 30 of module Hermes: 1373975
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 636181
+  line 107, col 9 to line 107, col 61 of module Hermes: 1130432
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 636181
+  line 108, col 9 to line 108, col 68 of module Hermes: 1130432
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 636181
+  line 109, col 9 to line 109, col 62 of module Hermes: 1130432
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 636181
+  line 110, col 9 to line 110, col 69 of module Hermes: 1130432
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 13149199
+  line 115, col 21 to line 115, col 26 of module Hermes: 1130432
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 13149201
+  line 115, col 29 to line 115, col 38 of module Hermes: 1130432
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 13149200
+  line 127, col 12 to line 128, col 81 of module Hermes: 12591840
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 13149200
+  line 129, col 24 to line 129, col 27 of module Hermes: 12591840
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 13149199
+  line 129, col 30 to line 129, col 43 of module Hermes: 12591840
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 13149201
+  line 129, col 46 to line 129, col 60 of module Hermes: 12591840
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 13149199
+  line 130, col 24 to line 130, col 33 of module Hermes: 12591840
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 902578
+  line 130, col 36 to line 130, col 41 of module Hermes: 12591840
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 902578
+  line 130, col 44 to line 130, col 52 of module Hermes: 12591839
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 902578
+  line 135, col 8 to line 135, col 60 of module Hermes: 679024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 902578
+  line 139, col 20 to line 139, col 25 of module Hermes: 679024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 902578
+  line 139, col 28 to line 139, col 41 of module Hermes: 679024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 902578
+  line 139, col 44 to line 139, col 58 of module Hermes: 679024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 6440039
+  line 140, col 20 to line 140, col 29 of module Hermes: 679024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 6440039
+  line 140, col 32 to line 140, col 44 of module Hermes: 679024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 2380634
+  line 161, col 18 to line 161, col 74 of module Hermes: 6715398
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 4059405
+  line 162, col 18 to line 163, col 73 of module Hermes: 6715398
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 105188794
+  line 165, col 24 to line 165, col 71 of module Hermes: 2147060
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 105188799
+  line 167, col 24 to line 167, col 77 of module Hermes: 4568338
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 105188799
+  line 172, col 30 to line 172, col 38 of module Hermes: 99566136
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 111628839
+  line 172, col 41 to line 172, col 46 of module Hermes: 99566137
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 111628838
+  line 172, col 49 to line 172, col 62 of module Hermes: 99566135
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 111628835
+  line 173, col 24 to line 173, col 38 of module Hermes: 106281538
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 2337342
+  line 173, col 41 to line 173, col 50 of module Hermes: 106281541
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 2337342
+  line 173, col 53 to line 173, col 65 of module Hermes: 106281538
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 2337342
+  line 183, col 12 to line 183, col 57 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 2337342
+  line 184, col 24 to line 184, col 27 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 2337342
+  line 184, col 30 to line 184, col 35 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 2337342
+  line 184, col 38 to line 184, col 51 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 2337342
+  line 184, col 54 to line 184, col 68 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 114217207
+  line 185, col 24 to line 185, col 33 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 8509907
+  line 185, col 36 to line 185, col 48 of module Hermes: 2273204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 8509908
+  line 58, col 12 to line 58, col 34 of module Hermes: 109464966
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 8509908
+  line 77, col 8 to line 77, col 37 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 8509907
+  line 78, col 20 to line 78, col 23 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 8509907
+  line 78, col 26 to line 78, col 34 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 8509908
+  line 78, col 37 to line 78, col 42 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 8509907
+  line 78, col 45 to line 78, col 58 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 3166305
+  line 79, col 20 to line 79, col 34 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 3166305
+  line 79, col 37 to line 79, col 49 of module Hermes: 16397880
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 3166305
+  line 83, col 20 to line 83, col 23 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 3166305
+  line 83, col 26 to line 83, col 31 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 3166305
+  line 83, col 34 to line 83, col 42 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 3166305
+  line 83, col 45 to line 83, col 58 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 3166305
+  line 84, col 20 to line 84, col 29 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1049612
+  line 84, col 32 to line 84, col 46 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1049612
+  line 84, col 49 to line 84, col 61 of module Hermes: 3051390
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1049612
+  line 89, col 9 to line 89, col 62 of module Hermes: 1373975
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1049612
+  line 90, col 9 to line 90, col 61 of module Hermes: 1373975
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1049612
+  line 91, col 9 to line 91, col 67 of module Hermes: 1373975
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1049612
+  line 92, col 9 to line 94, col 72 of module Hermes: 1373975
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 636181
+  line 95, col 9 to line 97, col 72 of module Hermes: 1373975
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(32) at 2018-07-12 17:23:18: 153741037 states generated (12,361,156 s/min), 11312945 distinct states found (756,810 ds/min), 2123709 states left on queue.
+Progress(32) at 2018-07-20 17:27:25: 156122729 states generated (12,343,496 s/min), 14692482 distinct states found (944,929 ds/min), 2222530 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(33) at 2018-07-12 17:24:18: 166299522 states generated (12,558,485 s/min), 12042126 distinct states found (729,181 ds/min), 2151041 states left on queue.
+Progress(32) at 2018-07-20 17:28:25: 168120131 states generated (11,997,402 s/min), 15627988 distinct states found (935,506 ds/min), 2272692 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(33) at 2018-07-12 17:25:18: 178647254 states generated (12,347,732 s/min), 12748918 distinct states found (706,792 ds/min), 2177403 states left on queue.
+Progress(32) at 2018-07-20 17:29:25: 180369216 states generated (12,249,085 s/min), 16560846 distinct states found (932,858 ds/min), 2332271 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2195:0 @!@!@
-Checkpointing of run /home/akatsarakis/Dropbox/TLA_plus/Hermes/Hermes.toolbox/Model_2/18-07-12-17-11-14
+Checkpointing of run /home/akatsarakis/Dropbox/CDT-Edinburgh/PhD/projects/hermes/tla/Hermes/Hermes.toolbox/Model_2/18-07-20-17-15-20
 @!@!@ENDMSG 2195 @!@!@
 @!@!@STARTMSG 2196:0 @!@!@
-Checkpointing completed at (2018-07-12 17:26:18)
+Checkpointing completed at (2018-07-20 17:30:25)
 @!@!@ENDMSG 2196 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(33) at 2018-07-12 17:26:18: 190866162 states generated (12,218,908 s/min), 13454606 distinct states found (705,688 ds/min), 2222354 states left on queue.
+Progress(33) at 2018-07-20 17:30:25: 192409089 states generated (12,039,873 s/min), 17454378 distinct states found (893,532 ds/min), 2322886 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:26:18
+The coverage statistics at 2018-07-20 17:30:25
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 776040
+  line 102, col 21 to line 102, col 30 of module Hermes: 1520674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 776040
+  line 107, col 9 to line 107, col 61 of module Hermes: 1497800
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 776040
+  line 108, col 9 to line 108, col 68 of module Hermes: 1497800
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 776040
+  line 109, col 9 to line 109, col 62 of module Hermes: 1497800
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 776040
+  line 110, col 9 to line 110, col 69 of module Hermes: 1497800
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 17180513
+  line 115, col 21 to line 115, col 26 of module Hermes: 1497800
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 17180600
+  line 115, col 29 to line 115, col 38 of module Hermes: 1497800
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 17180600
+  line 127, col 12 to line 128, col 81 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 17180600
+  line 129, col 24 to line 129, col 27 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 17180599
+  line 129, col 30 to line 129, col 43 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 17180600
+  line 129, col 46 to line 129, col 60 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 17180513
+  line 130, col 24 to line 130, col 33 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 1275656
+  line 130, col 36 to line 130, col 41 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 1275656
+  line 130, col 44 to line 130, col 52 of module Hermes: 16250618
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 1275656
+  line 135, col 8 to line 135, col 60 of module Hermes: 930937
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 1275656
+  line 139, col 20 to line 139, col 25 of module Hermes: 930937
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 1275656
+  line 139, col 28 to line 139, col 41 of module Hermes: 930937
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 1275656
+  line 139, col 44 to line 139, col 58 of module Hermes: 930937
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 7936145
+  line 140, col 20 to line 140, col 29 of module Hermes: 930937
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 7936107
+  line 140, col 32 to line 140, col 44 of module Hermes: 930937
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 2901916
+  line 161, col 18 to line 161, col 74 of module Hermes: 8272924
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 5034229
+  line 162, col 18 to line 163, col 73 of module Hermes: 8272924
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 143487186
+  line 165, col 24 to line 165, col 71 of module Hermes: 2645562
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 143487186
+  line 167, col 24 to line 167, col 77 of module Hermes: 5627362
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 143487187
+  line 172, col 30 to line 172, col 38 of module Hermes: 135720179
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 151423332
+  line 172, col 41 to line 172, col 46 of module Hermes: 135720179
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 151423331
+  line 172, col 49 to line 172, col 62 of module Hermes: 135720178
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 151423331
+  line 173, col 24 to line 173, col 38 of module Hermes: 143993103
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 3238407
+  line 173, col 41 to line 173, col 50 of module Hermes: 143993103
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 3238407
+  line 173, col 53 to line 173, col 65 of module Hermes: 143993103
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 3238407
+  line 183, col 12 to line 183, col 57 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 3238395
+  line 184, col 24 to line 184, col 27 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 3238407
+  line 184, col 30 to line 184, col 35 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 3238407
+  line 184, col 38 to line 184, col 51 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 3238407
+  line 184, col 54 to line 184, col 68 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 154625008
+  line 185, col 24 to line 185, col 33 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 11232316
+  line 185, col 36 to line 185, col 48 of module Hermes: 3096348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 11232316
+  line 58, col 12 to line 58, col 34 of module Hermes: 147942514
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 11232316
+  line 77, col 8 to line 77, col 37 of module Hermes: 20836892
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 11232316
+  line 78, col 20 to line 78, col 23 of module Hermes: 20836895
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 11232316
+  line 78, col 26 to line 78, col 34 of module Hermes: 20836892
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 11232316
+  line 78, col 37 to line 78, col 42 of module Hermes: 20836895
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 11232316
+  line 78, col 45 to line 78, col 58 of module Hermes: 20836892
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 4591075
+  line 79, col 20 to line 79, col 34 of module Hermes: 20836893
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 4591061
+  line 79, col 37 to line 79, col 49 of module Hermes: 20836895
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 4591075
+  line 83, col 20 to line 83, col 23 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 4591075
+  line 83, col 26 to line 83, col 31 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 4591075
+  line 83, col 34 to line 83, col 42 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 4591061
+  line 83, col 45 to line 83, col 58 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 4591075
+  line 84, col 20 to line 84, col 29 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1149981
+  line 84, col 32 to line 84, col 46 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1149981
+  line 84, col 49 to line 84, col 61 of module Hermes: 4283176
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1149981
+  line 89, col 9 to line 89, col 62 of module Hermes: 1520674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1149981
+  line 90, col 9 to line 90, col 61 of module Hermes: 1520674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1149978
+  line 91, col 9 to line 91, col 67 of module Hermes: 1520674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1149981
+  line 92, col 9 to line 94, col 72 of module Hermes: 1520674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 776040
+  line 95, col 9 to line 97, col 72 of module Hermes: 1520674
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(34) at 2018-07-12 17:27:18: 203238285 states generated (12,372,123 s/min), 14149047 distinct states found (694,441 ds/min), 2238975 states left on queue.
+Progress(33) at 2018-07-20 17:31:25: 204377287 states generated (11,968,198 s/min), 18360324 distinct states found (905,946 ds/min), 2370479 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(34) at 2018-07-12 17:28:18: 215289239 states generated (12,050,954 s/min), 14795877 distinct states found (646,830 ds/min), 2231671 states left on queue.
+Progress(33) at 2018-07-20 17:32:26: 216516876 states generated (12,139,589 s/min), 19214747 distinct states found (854,423 ds/min), 2352143 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(34) at 2018-07-12 17:29:18: 227424267 states generated (12,135,028 s/min), 15455989 distinct states found (660,112 ds/min), 2242891 states left on queue.
+Progress(34) at 2018-07-20 17:33:26: 228220896 states generated (11,704,020 s/min), 20045524 distinct states found (830,777 ds/min), 2332373 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(34) at 2018-07-12 17:30:18: 239527776 states generated (12,103,509 s/min), 16115095 distinct states found (659,106 ds/min), 2272200 states left on queue.
+Progress(34) at 2018-07-20 17:34:26: 240078141 states generated (11,857,245 s/min), 20907569 distinct states found (862,045 ds/min), 2362726 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:30:18
+The coverage statistics at 2018-07-20 17:34:26
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 894384
+  line 102, col 21 to line 102, col 30 of module Hermes: 1637381
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 894384
+  line 107, col 9 to line 107, col 61 of module Hermes: 1847698
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 894384
+  line 108, col 9 to line 108, col 68 of module Hermes: 1847698
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 894384
+  line 109, col 9 to line 109, col 62 of module Hermes: 1847698
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 894384
+  line 110, col 9 to line 110, col 69 of module Hermes: 1847698
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 20892725
+  line 115, col 21 to line 115, col 26 of module Hermes: 1847698
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 20892726
+  line 115, col 29 to line 115, col 38 of module Hermes: 1847698
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 20892726
+  line 127, col 12 to line 128, col 81 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 20892725
+  line 129, col 24 to line 129, col 27 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 20892725
+  line 129, col 30 to line 129, col 43 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 20892726
+  line 129, col 46 to line 129, col 60 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 20892725
+  line 130, col 24 to line 130, col 33 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 1649121
+  line 130, col 36 to line 130, col 41 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 1649121
+  line 130, col 44 to line 130, col 52 of module Hermes: 19668259
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 1649121
+  line 135, col 8 to line 135, col 60 of module Hermes: 1173676
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 1649121
+  line 139, col 20 to line 139, col 25 of module Hermes: 1173676
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 1649121
+  line 139, col 28 to line 139, col 41 of module Hermes: 1173676
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 1649121
+  line 139, col 44 to line 139, col 58 of module Hermes: 1173676
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 9230739
+  line 140, col 20 to line 140, col 29 of module Hermes: 1173676
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 9230739
+  line 140, col 32 to line 140, col 44 of module Hermes: 1173676
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 3366747
+  line 161, col 18 to line 161, col 74 of module Hermes: 9678395
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 5863992
+  line 162, col 18 to line 163, col 73 of module Hermes: 9678395
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 181456642
+  line 165, col 24 to line 165, col 71 of module Hermes: 3100264
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 181456643
+  line 167, col 24 to line 167, col 77 of module Hermes: 6578131
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 181456643
+  line 172, col 30 to line 172, col 38 of module Hermes: 171672173
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 190687382
+  line 172, col 41 to line 172, col 46 of module Hermes: 171672173
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 190687382
+  line 172, col 49 to line 172, col 62 of module Hermes: 171672172
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 190687382
+  line 173, col 24 to line 173, col 38 of module Hermes: 181350570
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 4182075
+  line 173, col 41 to line 173, col 50 of module Hermes: 181350571
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 4182075
+  line 173, col 53 to line 173, col 65 of module Hermes: 181350569
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 4182075
+  line 183, col 12 to line 183, col 57 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 4182075
+  line 184, col 24 to line 184, col 27 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 4182075
+  line 184, col 30 to line 184, col 35 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 4182075
+  line 184, col 38 to line 184, col 51 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 4182075
+  line 184, col 54 to line 184, col 68 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 194447390
+  line 185, col 24 to line 185, col 33 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 13842895
+  line 185, col 36 to line 185, col 48 of module Hermes: 3910606
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 13842895
+  line 58, col 12 to line 58, col 34 of module Hermes: 186009323
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 13842895
+  line 77, col 8 to line 77, col 37 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 13842895
+  line 78, col 20 to line 78, col 23 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 13842895
+  line 78, col 26 to line 78, col 34 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 13842895
+  line 78, col 37 to line 78, col 42 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 13842895
+  line 78, col 45 to line 78, col 58 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 6162743
+  line 79, col 20 to line 79, col 34 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 6162743
+  line 79, col 37 to line 79, col 49 of module Hermes: 24962890
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 6162743
+  line 83, col 20 to line 83, col 23 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 6162743
+  line 83, col 26 to line 83, col 31 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 6162743
+  line 83, col 34 to line 83, col 42 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 6162743
+  line 83, col 45 to line 83, col 58 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 6162743
+  line 84, col 20 to line 84, col 29 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1216503
+  line 84, col 32 to line 84, col 46 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1216503
+  line 84, col 49 to line 84, col 61 of module Hermes: 5527061
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1216503
+  line 89, col 9 to line 89, col 62 of module Hermes: 1637381
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1216503
+  line 90, col 9 to line 90, col 61 of module Hermes: 1637381
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1216503
+  line 91, col 9 to line 91, col 67 of module Hermes: 1637381
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1216503
+  line 92, col 9 to line 94, col 72 of module Hermes: 1637381
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 894384
+  line 95, col 9 to line 97, col 72 of module Hermes: 1637381
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(35) at 2018-07-12 17:31:18: 251794709 states generated (12,266,933 s/min), 16739343 distinct states found (624,248 ds/min), 2222980 states left on queue.
+Progress(35) at 2018-07-20 17:35:26: 251960193 states generated (11,882,052 s/min), 21698917 distinct states found (791,348 ds/min), 2290241 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(35) at 2018-07-12 17:32:18: 263670595 states generated (11,875,886 s/min), 17338431 distinct states found (599,088 ds/min), 2196937 states left on queue.
+Progress(35) at 2018-07-20 17:36:26: 263605777 states generated (11,645,584 s/min), 22496560 distinct states found (797,643 ds/min), 2259568 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(35) at 2018-07-12 17:33:19: 275661162 states generated (11,990,567 s/min), 17950232 distinct states found (611,801 ds/min), 2190015 states left on queue.
+Progress(35) at 2018-07-20 17:37:26: 275220898 states generated (11,615,121 s/min), 23298538 distinct states found (801,978 ds/min), 2268482 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(36) at 2018-07-12 17:34:19: 287627633 states generated (11,966,471 s/min), 18557568 distinct states found (607,336 ds/min), 2161882 states left on queue.
+Progress(36) at 2018-07-20 17:38:27: 286948429 states generated (11,727,531 s/min), 24056706 distinct states found (758,168 ds/min), 2174237 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:34:19
+The coverage statistics at 2018-07-20 17:38:27
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 989043
+  line 102, col 21 to line 102, col 30 of module Hermes: 1698484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 989043
+  line 107, col 9 to line 107, col 61 of module Hermes: 2201102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 989043
+  line 108, col 9 to line 108, col 68 of module Hermes: 2201104
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 989043
+  line 109, col 9 to line 109, col 62 of module Hermes: 2201102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 989043
+  line 110, col 9 to line 110, col 69 of module Hermes: 2201102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 24271679
+  line 115, col 21 to line 115, col 26 of module Hermes: 2201104
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 24271679
+  line 115, col 29 to line 115, col 38 of module Hermes: 2201102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 24271679
+  line 127, col 12 to line 128, col 81 of module Hermes: 22757903
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 24271679
+  line 129, col 24 to line 129, col 27 of module Hermes: 22757903
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 24271679
+  line 129, col 30 to line 129, col 43 of module Hermes: 22757903
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 24271679
+  line 129, col 46 to line 129, col 60 of module Hermes: 22757903
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 24271679
+  line 130, col 24 to line 130, col 33 of module Hermes: 22757903
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 2031170
+  line 130, col 36 to line 130, col 41 of module Hermes: 22757903
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 2031170
+  line 130, col 44 to line 130, col 52 of module Hermes: 22757894
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 2031170
+  line 135, col 8 to line 135, col 60 of module Hermes: 1417295
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 2031170
+  line 139, col 20 to line 139, col 25 of module Hermes: 1417295
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 2031170
+  line 139, col 28 to line 139, col 41 of module Hermes: 1417295
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 2031170
+  line 139, col 44 to line 139, col 58 of module Hermes: 1417295
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 10313630
+  line 140, col 20 to line 140, col 29 of module Hermes: 1417295
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 10313629
+  line 140, col 32 to line 140, col 44 of module Hermes: 1417295
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 3781382
+  line 161, col 18 to line 161, col 74 of module Hermes: 10804562
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 6532247
+  line 162, col 18 to line 163, col 73 of module Hermes: 10804566
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 219148229
+  line 165, col 24 to line 165, col 71 of module Hermes: 3489142
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 219148231
+  line 167, col 24 to line 167, col 77 of module Hermes: 7315420
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 219148231
+  line 172, col 30 to line 172, col 38 of module Hermes: 207538348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 229461862
+  line 172, col 41 to line 172, col 46 of module Hermes: 207538349
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 229461860
+  line 172, col 49 to line 172, col 62 of module Hermes: 207538347
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 229461858
+  line 173, col 24 to line 173, col 38 of module Hermes: 218343012
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 5221114
+  line 173, col 41 to line 173, col 50 of module Hermes: 218343013
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 5221114
+  line 173, col 53 to line 173, col 65 of module Hermes: 218342912
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 5221114
+  line 183, col 12 to line 183, col 57 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 5221114
+  line 184, col 24 to line 184, col 27 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 5221114
+  line 184, col 30 to line 184, col 35 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 5221114
+  line 184, col 38 to line 184, col 51 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 5221114
+  line 184, col 54 to line 184, col 68 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 233734604
+  line 185, col 24 to line 185, col 33 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 16395686
+  line 185, col 36 to line 185, col 48 of module Hermes: 4836074
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 16395686
+  line 58, col 12 to line 58, col 34 of module Hermes: 223659792
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 16395686
+  line 77, col 8 to line 77, col 37 of module Hermes: 28665942
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 16395686
+  line 78, col 20 to line 78, col 23 of module Hermes: 28665954
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 16395686
+  line 78, col 26 to line 78, col 34 of module Hermes: 28665942
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 16395686
+  line 78, col 37 to line 78, col 42 of module Hermes: 28665954
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 16395685
+  line 78, col 45 to line 78, col 58 of module Hermes: 28665942
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 8004595
+  line 79, col 20 to line 79, col 34 of module Hermes: 28665942
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 8004595
+  line 79, col 37 to line 79, col 49 of module Hermes: 28665954
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 8004595
+  line 83, col 20 to line 83, col 23 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 8004595
+  line 83, col 26 to line 83, col 31 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 8004595
+  line 83, col 34 to line 83, col 42 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 8004595
+  line 83, col 45 to line 83, col 58 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 8004595
+  line 84, col 20 to line 84, col 29 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1252532
+  line 84, col 32 to line 84, col 46 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1252532
+  line 84, col 49 to line 84, col 61 of module Hermes: 7029229
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1252532
+  line 89, col 9 to line 89, col 62 of module Hermes: 1698484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1252532
+  line 90, col 9 to line 90, col 61 of module Hermes: 1698484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1252532
+  line 91, col 9 to line 91, col 67 of module Hermes: 1698484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1252532
+  line 92, col 9 to line 94, col 72 of module Hermes: 1698484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 989043
+  line 95, col 9 to line 97, col 72 of module Hermes: 1698484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(36) at 2018-07-12 17:35:19: 299325313 states generated (11,697,680 s/min), 19120211 distinct states found (562,643 ds/min), 2110342 states left on queue.
+Progress(36) at 2018-07-20 17:39:27: 298491607 states generated (11,543,178 s/min), 24833979 distinct states found (777,273 ds/min), 2148371 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(36) at 2018-07-12 17:36:19: 311212022 states generated (11,886,709 s/min), 19701619 distinct states found (581,408 ds/min), 2078401 states left on queue.
+Progress(36) at 2018-07-20 17:40:27: 310211139 states generated (11,719,532 s/min), 25572479 distinct states found (738,500 ds/min), 2091833 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(36) at 2018-07-12 17:37:19: 323197743 states generated (11,985,721 s/min), 20268696 distinct states found (567,077 ds/min), 2041874 states left on queue.
+Progress(37) at 2018-07-20 17:41:27: 321646651 states generated (11,435,512 s/min), 26296376 distinct states found (723,897 ds/min), 1999370 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(37) at 2018-07-12 17:38:19: 335184269 states generated (11,986,526 s/min), 20837350 distinct states found (568,654 ds/min), 1972640 states left on queue.
+Progress(37) at 2018-07-20 17:42:27: 333108369 states generated (11,461,718 s/min), 27041236 distinct states found (744,860 ds/min), 1954135 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:38:19
+The coverage statistics at 2018-07-20 17:42:27
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 1070254
+  line 102, col 21 to line 102, col 30 of module Hermes: 1748548
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 1070254
+  line 107, col 9 to line 107, col 61 of module Hermes: 2543788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 1070254
+  line 108, col 9 to line 108, col 68 of module Hermes: 2543788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 1070254
+  line 109, col 9 to line 109, col 62 of module Hermes: 2543788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 1070254
+  line 110, col 9 to line 110, col 69 of module Hermes: 2543788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 27385836
+  line 115, col 21 to line 115, col 26 of module Hermes: 2543788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 27385836
+  line 115, col 29 to line 115, col 38 of module Hermes: 2543788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 27385836
+  line 127, col 12 to line 128, col 81 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 27385836
+  line 129, col 24 to line 129, col 27 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 27385836
+  line 129, col 30 to line 129, col 43 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 27385836
+  line 129, col 46 to line 129, col 60 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 27385836
+  line 130, col 24 to line 130, col 33 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 2404218
+  line 130, col 36 to line 130, col 41 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 2404218
+  line 130, col 44 to line 130, col 52 of module Hermes: 25673080
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 2404218
+  line 135, col 8 to line 135, col 60 of module Hermes: 1650148
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 2404218
+  line 139, col 20 to line 139, col 25 of module Hermes: 1650148
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 2404218
+  line 139, col 28 to line 139, col 41 of module Hermes: 1650148
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 2404218
+  line 139, col 44 to line 139, col 58 of module Hermes: 1650148
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 11269411
+  line 140, col 20 to line 140, col 29 of module Hermes: 1650148
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 11269411
+  line 140, col 32 to line 140, col 44 of module Hermes: 1650148
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 4163180
+  line 161, col 18 to line 161, col 74 of module Hermes: 11842394
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 7106231
+  line 162, col 18 to line 163, col 73 of module Hermes: 11842394
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 256663570
+  line 165, col 24 to line 165, col 71 of module Hermes: 3852902
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 256663571
+  line 167, col 24 to line 167, col 77 of module Hermes: 7989492
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 256663571
+  line 172, col 30 to line 172, col 38 of module Hermes: 243220010
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 267932982
+  line 172, col 41 to line 172, col 46 of module Hermes: 243220010
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 267932982
+  line 172, col 49 to line 172, col 62 of module Hermes: 243220010
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 267932982
+  line 173, col 24 to line 173, col 38 of module Hermes: 255062404
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 6287851
+  line 173, col 41 to line 173, col 50 of module Hermes: 255062405
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 6287851
+  line 173, col 53 to line 173, col 65 of module Hermes: 255062404
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 6287851
+  line 183, col 12 to line 183, col 57 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 6287851
+  line 184, col 24 to line 184, col 27 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 6287851
+  line 184, col 30 to line 184, col 35 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 6287851
+  line 184, col 38 to line 184, col 51 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 6287851
+  line 184, col 54 to line 184, col 68 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 272684116
+  line 185, col 24 to line 185, col 33 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 18864709
+  line 185, col 36 to line 185, col 48 of module Hermes: 5748181
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 18864709
+  line 58, col 12 to line 58, col 34 of module Hermes: 261004888
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 18864709
+  line 77, col 8 to line 77, col 37 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 18864708
+  line 78, col 20 to line 78, col 23 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 18864709
+  line 78, col 26 to line 78, col 34 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 18864709
+  line 78, col 37 to line 78, col 42 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 18864708
+  line 78, col 45 to line 78, col 58 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 9961793
+  line 79, col 20 to line 79, col 34 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 9961793
+  line 79, col 37 to line 79, col 49 of module Hermes: 32155638
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 9961793
+  line 83, col 20 to line 83, col 23 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 9961793
+  line 83, col 26 to line 83, col 31 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 9961793
+  line 83, col 34 to line 83, col 42 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 9961793
+  line 83, col 45 to line 83, col 58 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 9961793
+  line 84, col 20 to line 84, col 29 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1276662
+  line 84, col 32 to line 84, col 46 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1276662
+  line 84, col 49 to line 84, col 61 of module Hermes: 8526593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1276662
+  line 89, col 9 to line 89, col 62 of module Hermes: 1748548
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1276662
+  line 90, col 9 to line 90, col 61 of module Hermes: 1748548
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1276662
+  line 91, col 9 to line 91, col 67 of module Hermes: 1748548
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1276662
+  line 92, col 9 to line 94, col 72 of module Hermes: 1748548
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 1070254
+  line 95, col 9 to line 97, col 72 of module Hermes: 1748548
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(37) at 2018-07-12 17:39:19: 347000716 states generated (11,816,447 s/min), 21377801 distinct states found (540,451 ds/min), 1910615 states left on queue.
+Progress(38) at 2018-07-20 17:43:27: 344633711 states generated (11,525,342 s/min), 27725575 distinct states found (684,339 ds/min), 1839271 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(37) at 2018-07-12 17:40:20: 358839817 states generated (11,839,101 s/min), 21908179 distinct states found (530,378 ds/min), 1850639 states left on queue.
+Progress(38) at 2018-07-20 17:44:27: 355877814 states generated (11,244,103 s/min), 28419468 distinct states found (693,893 ds/min), 1757408 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2195:0 @!@!@
-Checkpointing of run /home/akatsarakis/Dropbox/TLA_plus/Hermes/Hermes.toolbox/Model_2/18-07-12-17-11-14
+Checkpointing of run /home/akatsarakis/Dropbox/CDT-Edinburgh/PhD/projects/hermes/tla/Hermes/Hermes.toolbox/Model_2/18-07-20-17-15-20
 @!@!@ENDMSG 2195 @!@!@
 @!@!@STARTMSG 2196:0 @!@!@
-Checkpointing completed at (2018-07-12 17:41:22)
+Checkpointing completed at (2018-07-20 17:45:28)
 @!@!@ENDMSG 2196 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(38) at 2018-07-12 17:41:22: 371072092 states generated (12,232,275 s/min), 22471914 distinct states found (563,735 ds/min), 1782191 states left on queue.
+Progress(38) at 2018-07-20 17:45:29: 367363017 states generated (11,485,203 s/min), 29107106 distinct states found (687,638 ds/min), 1679671 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(38) at 2018-07-12 17:42:22: 382375170 states generated (11,303,078 s/min), 22963144 distinct states found (491,230 ds/min), 1700027 states left on queue.
+Progress(39) at 2018-07-20 17:46:29: 378536759 states generated (11,173,742 s/min), 29761339 distinct states found (654,233 ds/min), 1553186 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:42:22
+The coverage statistics at 2018-07-20 17:46:29
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 1137434
+  line 102, col 21 to line 102, col 30 of module Hermes: 1770311
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 1137434
+  line 107, col 9 to line 107, col 61 of module Hermes: 2901038
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 1137434
+  line 108, col 9 to line 108, col 68 of module Hermes: 2901038
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 1137434
+  line 109, col 9 to line 109, col 62 of module Hermes: 2901038
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 1137434
+  line 110, col 9 to line 110, col 69 of module Hermes: 2901038
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 30232112
+  line 115, col 21 to line 115, col 26 of module Hermes: 2901038
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 30232112
+  line 115, col 29 to line 115, col 38 of module Hermes: 2901038
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 30232112
+  line 127, col 12 to line 128, col 81 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 30232112
+  line 129, col 24 to line 129, col 27 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 30232112
+  line 129, col 30 to line 129, col 43 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 30232112
+  line 129, col 46 to line 129, col 60 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 30232112
+  line 130, col 24 to line 130, col 33 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 2769124
+  line 130, col 36 to line 130, col 41 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 2769124
+  line 130, col 44 to line 130, col 52 of module Hermes: 28222503
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 2769124
+  line 135, col 8 to line 135, col 60 of module Hermes: 1869587
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 2769124
+  line 139, col 20 to line 139, col 25 of module Hermes: 1869587
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 2769124
+  line 139, col 28 to line 139, col 41 of module Hermes: 1869587
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 2769124
+  line 139, col 44 to line 139, col 58 of module Hermes: 1869587
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 12102329
+  line 140, col 20 to line 140, col 29 of module Hermes: 1869587
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 12102329
+  line 140, col 32 to line 140, col 44 of module Hermes: 1869587
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 4515415
+  line 161, col 18 to line 161, col 74 of module Hermes: 12642593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 7586914
+  line 162, col 18 to line 163, col 73 of module Hermes: 12642593
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 294127303
+  line 165, col 24 to line 165, col 71 of module Hermes: 4163604
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 294127304
+  line 167, col 24 to line 167, col 77 of module Hermes: 8478989
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 294127305
+  line 172, col 30 to line 172, col 38 of module Hermes: 278863566
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 306229634
+  line 172, col 41 to line 172, col 46 of module Hermes: 278863566
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 306229633
+  line 172, col 49 to line 172, col 62 of module Hermes: 278863564
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 306229632
+  line 173, col 24 to line 173, col 38 of module Hermes: 291506162
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 7391938
+  line 173, col 41 to line 173, col 50 of module Hermes: 291506165
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 7391938
+  line 173, col 53 to line 173, col 65 of module Hermes: 291506161
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 7391938
+  line 183, col 12 to line 183, col 57 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 7391938
+  line 184, col 24 to line 184, col 27 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 7391938
+  line 184, col 30 to line 184, col 35 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 7391938
+  line 184, col 38 to line 184, col 51 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 7391938
+  line 184, col 54 to line 184, col 68 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 311427511
+  line 185, col 24 to line 185, col 33 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 21263116
+  line 185, col 36 to line 185, col 48 of module Hermes: 6764742
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 21263116
+  line 58, col 12 to line 58, col 34 of module Hermes: 298047096
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 21263116
+  line 77, col 8 to line 77, col 37 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 21263116
+  line 78, col 20 to line 78, col 23 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 21263116
+  line 78, col 26 to line 78, col 34 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 21263116
+  line 78, col 37 to line 78, col 42 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 21263116
+  line 78, col 45 to line 78, col 58 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 12060515
+  line 79, col 20 to line 79, col 34 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 12060515
+  line 79, col 37 to line 79, col 49 of module Hermes: 35220348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 12060515
+  line 83, col 20 to line 83, col 23 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 12060515
+  line 83, col 26 to line 83, col 31 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 12060515
+  line 83, col 34 to line 83, col 42 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 12060515
+  line 83, col 45 to line 83, col 58 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 12060515
+  line 84, col 20 to line 84, col 29 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1291320
+  line 84, col 32 to line 84, col 46 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1291320
+  line 84, col 49 to line 84, col 61 of module Hermes: 10282410
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1291320
+  line 89, col 9 to line 89, col 62 of module Hermes: 1770311
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1291320
+  line 90, col 9 to line 90, col 61 of module Hermes: 1770311
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1291320
+  line 91, col 9 to line 91, col 67 of module Hermes: 1770311
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1291320
+  line 92, col 9 to line 94, col 72 of module Hermes: 1770311
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 1137434
+  line 95, col 9 to line 97, col 72 of module Hermes: 1770311
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(38) at 2018-07-12 17:43:23: 393889634 states generated (11,514,464 s/min), 23458028 distinct states found (494,884 ds/min), 1623814 states left on queue.
+Progress(39) at 2018-07-20 17:47:29: 389718656 states generated (11,181,897 s/min), 30426895 distinct states found (665,556 ds/min), 1468495 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(39) at 2018-07-12 17:44:23: 405481358 states generated (11,591,724 s/min), 23963946 distinct states found (505,918 ds/min), 1544171 states left on queue.
+Progress(40) at 2018-07-20 17:48:29: 400828933 states generated (11,110,277 s/min), 31045799 distinct states found (618,904 ds/min), 1324104 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(39) at 2018-07-12 17:45:23: 417036362 states generated (11,555,004 s/min), 24445846 distinct states found (481,900 ds/min), 1445481 states left on queue.
+Progress(40) at 2018-07-20 17:49:30: 411873760 states generated (11,044,827 s/min), 31680223 distinct states found (634,424 ds/min), 1222173 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(39) at 2018-07-12 17:46:23: 428515498 states generated (11,479,136 s/min), 24903395 distinct states found (457,549 ds/min), 1344246 states left on queue.
+Progress(41) at 2018-07-20 17:50:30: 422824598 states generated (10,950,838 s/min), 32275219 distinct states found (594,996 ds/min), 1069306 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:46:23
+The coverage statistics at 2018-07-20 17:50:30
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 1187200
+  line 102, col 21 to line 102, col 30 of module Hermes: 1783213
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 1187200
+  line 107, col 9 to line 107, col 61 of module Hermes: 3264702
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 1187200
+  line 108, col 9 to line 108, col 68 of module Hermes: 3264702
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 1187200
+  line 109, col 9 to line 109, col 62 of module Hermes: 3264702
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 1187200
+  line 110, col 9 to line 110, col 69 of module Hermes: 3264702
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 32755085
+  line 115, col 21 to line 115, col 26 of module Hermes: 3264702
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 32755085
+  line 115, col 29 to line 115, col 38 of module Hermes: 3264702
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 32755085
+  line 127, col 12 to line 128, col 81 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 32755085
+  line 129, col 24 to line 129, col 27 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 32755085
+  line 129, col 30 to line 129, col 43 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 32755085
+  line 129, col 46 to line 129, col 60 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 32755085
+  line 130, col 24 to line 130, col 33 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 3113624
+  line 130, col 36 to line 130, col 41 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 3113624
+  line 130, col 44 to line 130, col 52 of module Hermes: 30489637
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 3113624
+  line 135, col 8 to line 135, col 60 of module Hermes: 2069059
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 3113624
+  line 139, col 20 to line 139, col 25 of module Hermes: 2069059
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 3113624
+  line 139, col 28 to line 139, col 41 of module Hermes: 2069059
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 3113624
+  line 139, col 44 to line 139, col 58 of module Hermes: 2069059
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 12804125
+  line 140, col 20 to line 140, col 29 of module Hermes: 2069059
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 12804125
+  line 140, col 32 to line 140, col 44 of module Hermes: 2069059
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 4831030
+  line 161, col 18 to line 161, col 74 of module Hermes: 13301918
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 7973095
+  line 162, col 18 to line 163, col 73 of module Hermes: 13301918
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 330999477
+  line 165, col 24 to line 165, col 71 of module Hermes: 4438067
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 330999478
+  line 167, col 24 to line 167, col 77 of module Hermes: 8863851
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 330999479
+  line 172, col 30 to line 172, col 38 of module Hermes: 314005188
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 343803605
+  line 172, col 41 to line 172, col 46 of module Hermes: 314005188
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 343803604
+  line 172, col 49 to line 172, col 62 of module Hermes: 314005188
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 343803602
+  line 173, col 24 to line 173, col 38 of module Hermes: 327307109
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 8515173
+  line 173, col 41 to line 173, col 50 of module Hermes: 327307111
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 8515173
+  line 173, col 53 to line 173, col 65 of module Hermes: 327307108
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 8515173
+  line 183, col 12 to line 183, col 57 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 8515173
+  line 184, col 24 to line 184, col 27 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 8515173
+  line 184, col 30 to line 184, col 35 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 8515173
+  line 184, col 38 to line 184, col 51 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 8515173
+  line 184, col 54 to line 184, col 68 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 349403259
+  line 185, col 24 to line 185, col 33 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 23559147
+  line 185, col 36 to line 185, col 48 of module Hermes: 7815957
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 23559147
+  line 58, col 12 to line 58, col 34 of module Hermes: 334424081
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 23559147
+  line 77, col 8 to line 77, col 37 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 23559146
+  line 78, col 20 to line 78, col 23 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 23559147
+  line 78, col 26 to line 78, col 34 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 23559147
+  line 78, col 37 to line 78, col 42 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 23559146
+  line 78, col 45 to line 78, col 58 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 14282860
+  line 79, col 20 to line 79, col 34 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 14282860
+  line 79, col 37 to line 79, col 49 of module Hermes: 37954692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 14282860
+  line 83, col 20 to line 83, col 23 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 14282860
+  line 83, col 26 to line 83, col 31 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 14282860
+  line 83, col 34 to line 83, col 42 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 14282860
+  line 83, col 45 to line 83, col 58 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 14282860
+  line 84, col 20 to line 84, col 29 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1298832
+  line 84, col 32 to line 84, col 46 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1298832
+  line 84, col 49 to line 84, col 61 of module Hermes: 12140257
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1298832
+  line 89, col 9 to line 89, col 62 of module Hermes: 1783213
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1298832
+  line 90, col 9 to line 90, col 61 of module Hermes: 1783213
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1298832
+  line 91, col 9 to line 91, col 67 of module Hermes: 1783213
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1298832
+  line 92, col 9 to line 94, col 72 of module Hermes: 1783213
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 1187200
+  line 95, col 9 to line 97, col 72 of module Hermes: 1783213
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(40) at 2018-07-12 17:47:23: 439936912 states generated (11,421,414 s/min), 25387419 distinct states found (484,024 ds/min), 1250789 states left on queue.
+Progress(42) at 2018-07-20 17:51:30: 433766679 states generated (10,942,081 s/min), 32864956 distinct states found (589,737 ds/min), 924609 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(40) at 2018-07-12 17:48:24: 451260056 states generated (11,323,144 s/min), 25827481 distinct states found (440,062 ds/min), 1136604 states left on queue.
+Progress(42) at 2018-07-20 17:52:30: 444524522 states generated (10,757,843 s/min), 33441853 distinct states found (576,897 ds/min), 790619 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(41) at 2018-07-12 17:49:24: 462661481 states generated (11,401,425 s/min), 26275060 distinct states found (447,579 ds/min), 1026300 states left on queue.
+Progress(43) at 2018-07-20 17:53:30: 455105885 states generated (10,581,363 s/min), 33988224 distinct states found (546,371 ds/min), 630099 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(41) at 2018-07-12 17:50:25: 473806857 states generated (11,145,376 s/min), 26693926 distinct states found (418,866 ds/min), 901434 states left on queue.
+Progress(44) at 2018-07-20 17:54:31: 465695073 states generated (10,589,188 s/min), 34509554 distinct states found (521,330 ds/min), 451053 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:50:25
+The coverage statistics at 2018-07-20 17:54:31
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 1225239
+  line 102, col 21 to line 102, col 30 of module Hermes: 1787449
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 1225239
+  line 107, col 9 to line 107, col 61 of module Hermes: 3655094
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 1225239
+  line 108, col 9 to line 108, col 68 of module Hermes: 3655094
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 1225239
+  line 109, col 9 to line 109, col 62 of module Hermes: 3655094
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 1225239
+  line 110, col 9 to line 110, col 69 of module Hermes: 3655094
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 34969489
+  line 115, col 21 to line 115, col 26 of module Hermes: 3655094
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 34969489
+  line 115, col 29 to line 115, col 38 of module Hermes: 3655094
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 34969489
+  line 127, col 12 to line 128, col 81 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 34969489
+  line 129, col 24 to line 129, col 27 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 34969489
+  line 129, col 30 to line 129, col 43 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 34969489
+  line 129, col 46 to line 129, col 60 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 34969489
+  line 130, col 24 to line 130, col 33 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 3438211
+  line 130, col 36 to line 130, col 41 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 3438211
+  line 130, col 44 to line 130, col 52 of module Hermes: 32335439
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 3438211
+  line 135, col 8 to line 135, col 60 of module Hermes: 2234955
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 3438211
+  line 139, col 20 to line 139, col 25 of module Hermes: 2234955
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 3438211
+  line 139, col 28 to line 139, col 41 of module Hermes: 2234955
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 3438211
+  line 139, col 44 to line 139, col 58 of module Hermes: 2234955
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 13391179
+  line 140, col 20 to line 140, col 29 of module Hermes: 2234955
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 13391178
+  line 140, col 32 to line 140, col 44 of module Hermes: 2234955
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 5115269
+  line 161, col 18 to line 161, col 74 of module Hermes: 13760867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 8275909
+  line 162, col 18 to line 163, col 73 of module Hermes: 13760867
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 367319599
+  line 165, col 24 to line 165, col 71 of module Hermes: 4659459
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 367319602
+  line 167, col 24 to line 167, col 77 of module Hermes: 9101408
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 367319603
+  line 172, col 30 to line 172, col 38 of module Hermes: 348614986
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 380710782
+  line 172, col 41 to line 172, col 46 of module Hermes: 348614987
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 380710780
+  line 172, col 49 to line 172, col 62 of module Hermes: 348614985
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 380710778
+  line 173, col 24 to line 173, col 38 of module Hermes: 362375858
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 9674762
+  line 173, col 41 to line 173, col 50 of module Hermes: 362375860
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 9674762
+  line 173, col 53 to line 173, col 65 of module Hermes: 362375856
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 9674762
+  line 183, col 12 to line 183, col 57 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 9674762
+  line 184, col 24 to line 184, col 27 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 9674762
+  line 184, col 30 to line 184, col 35 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 9674762
+  line 184, col 38 to line 184, col 51 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 9674762
+  line 184, col 54 to line 184, col 68 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 386677671
+  line 185, col 24 to line 185, col 33 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 25792490
+  line 185, col 36 to line 185, col 48 of module Hermes: 8941525
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 25792490
+  line 58, col 12 to line 58, col 34 of module Hermes: 370053352
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 25792490
+  line 77, col 8 to line 77, col 37 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 25792490
+  line 78, col 20 to line 78, col 23 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 25792490
+  line 78, col 26 to line 78, col 34 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 25792490
+  line 78, col 37 to line 78, col 42 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 25792490
+  line 78, col 45 to line 78, col 58 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 16692466
+  line 79, col 20 to line 79, col 34 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 16692466
+  line 79, col 37 to line 79, col 49 of module Hermes: 40183332
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 16692466
+  line 83, col 20 to line 83, col 23 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 16692466
+  line 83, col 26 to line 83, col 31 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 16692466
+  line 83, col 34 to line 83, col 42 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 16692466
+  line 83, col 45 to line 83, col 58 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 16692466
+  line 84, col 20 to line 84, col 29 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1303443
+  line 84, col 32 to line 84, col 46 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1303443
+  line 84, col 49 to line 84, col 61 of module Hermes: 14181433
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1303443
+  line 89, col 9 to line 89, col 62 of module Hermes: 1787449
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1303443
+  line 90, col 9 to line 90, col 61 of module Hermes: 1787449
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1303443
+  line 91, col 9 to line 91, col 67 of module Hermes: 1787449
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1303443
+  line 92, col 9 to line 94, col 72 of module Hermes: 1787449
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 1225239
+  line 95, col 9 to line 97, col 72 of module Hermes: 1787449
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(42) at 2018-07-12 17:51:25: 485040288 states generated (11,233,431 s/min), 27110825 distinct states found (416,899 ds/min), 771482 states left on queue.
+Progress(46) at 2018-07-20 17:55:31: 476066427 states generated (10,371,354 s/min), 35000007 distinct states found (490,453 ds/min), 256208 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(42) at 2018-07-12 17:52:25: 496384905 states generated (11,344,617 s/min), 27504826 distinct states found (394,001 ds/min), 623503 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(43) at 2018-07-12 17:53:25: 507630616 states generated (11,245,711 s/min), 27898389 distinct states found (393,563 ds/min), 476053 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(44) at 2018-07-12 17:54:25: 518785934 states generated (11,155,318 s/min), 28263781 distinct states found (365,392 ds/min), 311375 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:54:25
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 1245185
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 1245185
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 1245185
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 1245185
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 1245185
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 36705656
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 3723811
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 3723811
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 3723811
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 3723811
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 3723811
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 3723811
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 13805353
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 13805353
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 5344775
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 8460578
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 403698898
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 403698900
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 403698902
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 417504255
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 417504254
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 417504252
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 10902194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 423777870
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 27952404
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 19447832
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1304621
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1304621
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1304621
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1304621
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1304621
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1304621
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 1245185
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2202:0 @!@!@
-End of statistics.
-@!@!@ENDMSG 2202 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(46) at 2018-07-12 17:55:25: 529712337 states generated (10,926,403 s/min), 28601639 distinct states found (337,858 ds/min), 134089 states left on queue.
+Progress(51) at 2018-07-20 17:56:31: 486035326 states generated (9,968,899 s/min), 35431895 distinct states found (431,888 ds/min), 35459 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 7.9E-4
-  based on the actual fingerprints:  val = 5.9E-5
+  calculated (optimistic):  val = 8.7E-4
+  based on the actual fingerprints:  val = 7.6E-5
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2018-07-12 17:56:09
+The coverage statistics at 2018-07-20 17:56:44
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 100, col 9 to line 100, col 66 of module Hermes: 1248074
+  line 102, col 21 to line 102, col 30 of module Hermes: 1787597
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 9 to line 101, col 60 of module Hermes: 1248074
+  line 107, col 9 to line 107, col 61 of module Hermes: 3886692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 9 to line 102, col 67 of module Hermes: 1248074
+  line 108, col 9 to line 108, col 68 of module Hermes: 3886692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 21 to line 107, col 26 of module Hermes: 1248074
+  line 109, col 9 to line 109, col 62 of module Hermes: 3886692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 29 to line 107, col 38 of module Hermes: 1248074
+  line 110, col 9 to line 110, col 69 of module Hermes: 3886692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 12 to line 120, col 80 of module Hermes: 37176956
+  line 115, col 21 to line 115, col 26 of module Hermes: 3886692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 24 to line 121, col 27 of module Hermes: 37176956
+  line 115, col 29 to line 115, col 38 of module Hermes: 3886692
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 30 to line 121, col 43 of module Hermes: 37176956
+  line 127, col 12 to line 128, col 81 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 121, col 46 to line 121, col 58 of module Hermes: 37176956
+  line 129, col 24 to line 129, col 27 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 24 to line 122, col 33 of module Hermes: 37176956
+  line 129, col 30 to line 129, col 43 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 36 to line 122, col 41 of module Hermes: 37176956
+  line 129, col 46 to line 129, col 60 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 122, col 44 to line 122, col 52 of module Hermes: 37176956
+  line 130, col 24 to line 130, col 33 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 127, col 8 to line 127, col 60 of module Hermes: 3812526
+  line 130, col 36 to line 130, col 41 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 20 to line 131, col 25 of module Hermes: 3812526
+  line 130, col 44 to line 130, col 52 of module Hermes: 32998253
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 28 to line 131, col 41 of module Hermes: 3812526
+  line 135, col 8 to line 135, col 60 of module Hermes: 2290472
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 131, col 44 to line 131, col 56 of module Hermes: 3812526
+  line 139, col 20 to line 139, col 25 of module Hermes: 2290472
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 20 to line 132, col 29 of module Hermes: 3812526
+  line 139, col 28 to line 139, col 41 of module Hermes: 2290472
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 132, col 32 to line 132, col 43 of module Hermes: 3812526
+  line 139, col 44 to line 139, col 58 of module Hermes: 2290472
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 18 to line 152, col 74 of module Hermes: 13901158
+  line 140, col 20 to line 140, col 29 of module Hermes: 2290472
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 18 to line 154, col 73 of module Hermes: 13901158
+  line 140, col 32 to line 140, col 44 of module Hermes: 2290472
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 156, col 24 to line 156, col 71 of module Hermes: 5406104
+  line 161, col 18 to line 161, col 74 of module Hermes: 13873519
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 24 to line 158, col 77 of module Hermes: 8495054
+  line 162, col 18 to line 163, col 73 of module Hermes: 13873519
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 30 to line 163, col 38 of module Hermes: 418208800
+  line 165, col 24 to line 165, col 71 of module Hermes: 4729694
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 41 to line 163, col 46 of module Hermes: 418208800
+  line 167, col 24 to line 167, col 77 of module Hermes: 9143825
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 163, col 49 to line 163, col 62 of module Hermes: 418208800
+  line 172, col 30 to line 172, col 38 of module Hermes: 366483956
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 24 to line 164, col 36 of module Hermes: 432109958
+  line 172, col 41 to line 172, col 46 of module Hermes: 366483956
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 39 to line 164, col 48 of module Hermes: 432109958
+  line 172, col 49 to line 172, col 62 of module Hermes: 366483956
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 164, col 51 to line 164, col 62 of module Hermes: 432109958
+  line 173, col 24 to line 173, col 38 of module Hermes: 380357475
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 174, col 12 to line 174, col 57 of module Hermes: 11418815
+  line 173, col 41 to line 173, col 50 of module Hermes: 380357475
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 24 to line 175, col 27 of module Hermes: 11418815
+  line 173, col 53 to line 173, col 65 of module Hermes: 380357475
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 30 to line 175, col 35 of module Hermes: 11418815
+  line 183, col 12 to line 183, col 57 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 38 to line 175, col 51 of module Hermes: 11418815
+  line 184, col 24 to line 184, col 27 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 175, col 54 to line 175, col 66 of module Hermes: 11418815
+  line 184, col 30 to line 184, col 35 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 24 to line 176, col 33 of module Hermes: 11418815
+  line 184, col 38 to line 184, col 51 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 176, col 36 to line 176, col 47 of module Hermes: 11418815
+  line 184, col 54 to line 184, col 68 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 12 to line 54, col 34 of module Hermes: 438475232
+  line 185, col 24 to line 185, col 33 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 7 to line 70, col 77 of module Hermes: 28787385
+  line 185, col 36 to line 185, col 48 of module Hermes: 9620050
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 20 to line 71, col 23 of module Hermes: 28787385
+  line 58, col 12 to line 58, col 34 of module Hermes: 388322236
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 26 to line 71, col 34 of module Hermes: 28787385
+  line 77, col 8 to line 77, col 37 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 37 to line 71, col 42 of module Hermes: 28787385
+  line 78, col 20 to line 78, col 23 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 45 to line 71, col 58 of module Hermes: 28787385
+  line 78, col 26 to line 78, col 34 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 61 to line 71, col 73 of module Hermes: 28787385
+  line 78, col 37 to line 78, col 42 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 76 to line 71, col 87 of module Hermes: 28787385
+  line 78, col 45 to line 78, col 58 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 20 to line 75, col 23 of module Hermes: 20739476
+  line 79, col 20 to line 79, col 34 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 26 to line 75, col 31 of module Hermes: 20739476
+  line 79, col 37 to line 79, col 49 of module Hermes: 40918680
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 34 to line 75, col 42 of module Hermes: 20739476
+  line 83, col 20 to line 83, col 23 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 45 to line 75, col 58 of module Hermes: 20739476
+  line 83, col 26 to line 83, col 31 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 20 to line 76, col 29 of module Hermes: 20739476
+  line 83, col 34 to line 83, col 42 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 32 to line 76, col 44 of module Hermes: 20739476
+  line 83, col 45 to line 83, col 58 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 47 to line 76, col 58 of module Hermes: 20739476
+  line 84, col 20 to line 84, col 29 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 9 to line 81, col 61 of module Hermes: 1304674
+  line 84, col 32 to line 84, col 46 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 82, col 9 to line 82, col 60 of module Hermes: 1304674
+  line 84, col 49 to line 84, col 61 of module Hermes: 15409343
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 9 to line 83, col 66 of module Hermes: 1304674
+  line 89, col 9 to line 89, col 62 of module Hermes: 1787597
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 9 to line 86, col 71 of module Hermes: 1304674
+  line 90, col 9 to line 90, col 61 of module Hermes: 1787597
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 9 to line 89, col 71 of module Hermes: 1304674
+  line 91, col 9 to line 91, col 67 of module Hermes: 1787597
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 21 to line 94, col 30 of module Hermes: 1304674
+  line 92, col 9 to line 94, col 72 of module Hermes: 1787597
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 99, col 9 to line 99, col 59 of module Hermes: 1248074
+  line 95, col 9 to line 97, col 72 of module Hermes: 1787597
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(58) at 2018-07-12 17:56:09: 536597865 states generated (11,949,322 s/min), 28787385 distinct states found (641,056 ds/min), 0 states left on queue.
+Progress(62) at 2018-07-20 17:56:44: 487268563 states generated (11,772,222 s/min), 35476192 distinct states found (857,091 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-536597865 states generated, 28787385 distinct states found, 0 states left on queue.
+487268563 states generated, 35476192 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 58.
+The depth of the complete state graph search is 62.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
-The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 9 and the 95th percentile is 3).
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 11 and the 95th percentile is 3).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 2695131ms at (2018-07-12 17:56:09)
+Finished in 2484452ms at (2018-07-20 17:56:44)
 @!@!@ENDMSG 2186 @!@!@
