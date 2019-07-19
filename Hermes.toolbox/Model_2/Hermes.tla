@@ -18,8 +18,9 @@ HConsistent ==
     \A k,s \in aliveNodes:  \/ nodeState[k] /= "valid"
                             \/ nodeState[s] /= "valid" 
                             \/ nodeTS[k] = nodeTS[s]
-                                     
-HMessage ==  
+                            
+                                 
+HMessage ==  \* Messages exchanged by the Protocol   
     [type: {"INV", "ACK"}, sender    : NODES,
                            version   : 0..MAX_VERSION, 
                            tieBreaker: NODES] 
@@ -55,22 +56,26 @@ HInit == \* The initial predicate
                                               CHOOSE k \in NODES: 
                                                \A m \in NODES: k <= m]]
 -------------------------------------------------------------------------------------
+\* A buffer maintaining all network messages. Messages are only appended to this variable (not 
+\* removed once delivered) intentionally to check protocols tolerance in dublicates and reorderings 
 send(m) == msgs' = msgs \union {m}
-                                                  
+
+\* Check if all acknowledgments for a write have been received                                                  
 receivedAllAcks(n) == nodeRcvedAcks[n] = NODES \ {n}
         
-equalTS(v1,tb1,v2,tb2) ==  
+equalTS(v1,tb1,v2,tb2) ==  \* Timestamp equality
     /\ v1 = v2
     /\ tb1 = tb2
 
-greaterTS(v1,tb1,v2,tb2) == 
+greaterTS(v1,tb1,v2,tb2) == \* Timestamp comparison
     \/ v1 > v2
     \/ /\   v1 = v2
        /\  tb1 > tb2
        
 isAlive(n) == n \in aliveNodes
 
-nodeFailure(n) == 
+nodeFailure(n) == \* Emulate a node failure
+\*    Make sure that there are atleast 3 alive nodes before killing a node
     /\ \E k,m \in aliveNodes: /\ k /= n 
                               /\ m /= n
                               /\ m /= k
@@ -78,12 +83,12 @@ nodeFailure(n) ==
     /\ UNCHANGED <<msgs, nodeState, nodeTS, nodeLastWriter, 
                    nodeLastWriteTS, nodeRcvedAcks>>
 -------------------------------------------------------------------------------------
-HRead(n) ==  
+HRead(n) ==  \* Execute a read
     /\ nodeState[n] = "valid"
     /\ UNCHANGED <<msgs, nodeTS, nodeState, nodeLastWriter, 
                    aliveNodes, nodeLastWriteTS, nodeRcvedAcks>>
              
-HWrite(n) == 
+HWrite(n) == \* Execute a write
     /\  nodeState[n]      \in {"valid", "invalid"}
     /\  nodeTS[n].version < MAX_VERSION
     /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
@@ -101,7 +106,7 @@ HWrite(n) ==
               tieBreaker  |-> n])              
     /\  UNCHANGED <<aliveNodes>>
                 
-HReplayWrite(n) ==
+HReplayWrite(n) == \* Execute a write-replay
     /\  nodeState[n] = "invalid"
     /\  ~isAlive(nodeLastWriter[n])
     /\  nodeLastWriter'  = [nodeLastWriter   EXCEPT ![n] = n]
@@ -114,7 +119,7 @@ HReplayWrite(n) ==
               tieBreaker |-> nodeTS[n].tieBreaker])
     /\  UNCHANGED <<nodeTS, aliveNodes>>
 -------------------------------------------------------------------------------------     
-HRcvAck(n) ==   
+HRcvAck(n) ==   \* Process a received acknowledment
     \E m \in msgs: 
         /\ m.type = "ACK"
         /\ m.sender /= n
@@ -129,7 +134,7 @@ HRcvAck(n) ==
         /\ UNCHANGED <<msgs, nodeLastWriter, nodeLastWriteTS, 
                        aliveNodes, nodeTS, nodeState>>
 
-HSendVals(n) == 
+HSendVals(n) == \* Send validations once received acknowledments from all alive nodes
     /\ nodeState[n] \in {"write", "replay"}
     /\ receivedAllAcks(n)
     /\ nodeState'         = [nodeState EXCEPT![n] = "valid"]
@@ -139,17 +144,18 @@ HSendVals(n) ==
     /\ UNCHANGED <<nodeTS, nodeLastWriter, nodeLastWriteTS,
                    aliveNodes, nodeRcvedAcks>>
 
-HCoordinatorActions(n) ==   
-    \/ HRead(n)
-    \/ HReplayWrite(n) \* this is for failures
-    \/ HWrite(n)
+HCoordinatorActions(n) ==   \* Actions of a read/write coordinator 
+    \/ HRead(n)          
+    \/ HReplayWrite(n) 
+    \/ HWrite(n)         
     \/ HRcvAck(n)
     \/ HSendVals(n) 
 -------------------------------------------------------------------------------------               
-HRcvInv(n) ==   
+HRcvInv(n) ==  \* Process a received invalidation
     \E m \in msgs: 
         /\ m.type = "INV"
         /\ m.sender /= n
+        \* always acknowledge a received invalidation (irrelevant to the timestamp)
         /\ send([type       |-> "ACK",
                  sender     |-> n,   
                  version    |-> m.version,
@@ -172,7 +178,7 @@ HRcvInv(n) ==
               /\ UNCHANGED <<nodeState, nodeTS, nodeLastWriter>>
         /\ UNCHANGED <<nodeLastWriteTS, aliveNodes, nodeRcvedAcks>>
             
-HRcvVal(n) ==   
+HRcvVal(n) ==   \* Process a received validation
     \E m \in msgs: 
         /\ nodeState[n] /= "valid"
         /\ m.type = "VAL"
@@ -184,16 +190,13 @@ HRcvVal(n) ==
         /\ UNCHANGED <<msgs, nodeTS, nodeLastWriter, nodeLastWriteTS,
                        aliveNodes, nodeRcvedAcks>>
                        
-HFollowerActions(n) ==  
+HFollowerActions(n) ==  \* Actions of a write follower
     \/ HRcvInv(n)
     \/ HRcvVal(n) 
 -------------------------------------------------------------------------------------                       
-HNext == 
+HNext == \* Modeling Hermes protocol (Coordinator and Follower actions while emulating failures)
     \E n \in aliveNodes:       
             \/ HFollowerActions(n)
             \/ HCoordinatorActions(n)
-            \/ nodeFailure(n) \* this is for failures
+            \/ nodeFailure(n) \* emulate node failures
 =============================================================================
-\* Modification History
-\* Last modified Fri Jul 20 17:15:05 BST 2018 by akatsarakis
-\* Created Tue Jul 10 09:43:12 BST 2018 by akatsarakis

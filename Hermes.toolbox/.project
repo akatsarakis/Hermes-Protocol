@@ -21,6 +21,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Hermes-RMWs.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Hermes-RMWs.tla</locationURI>
+		</link>
+		<link>
 			<name>Hermes.tla</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Hermes.tla</locationURI>

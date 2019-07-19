@@ -1,8 +1,8 @@
 ------------------------------- MODULE Hermes -------------------------------
 EXTENDS     Integers
 
-CONSTANTS   NODES,
-            MAX_VERSION
+CONSTANTS   H_NODES,
+            H_MAX_VERSION
             
 VARIABLES   msgs,
             nodeTS,
@@ -21,47 +21,48 @@ HConsistent ==
                             
                                  
 HMessage ==  \* Messages exchanged by the Protocol   
-    [type: {"INV", "ACK"}, sender    : NODES,
-                           version   : 0..MAX_VERSION, 
-                           tieBreaker: NODES] 
+    [type: {"INV", "ACK"}, sender    : H_NODES,
+                           version   : 0..H_MAX_VERSION, 
+                           tieBreaker: H_NODES] 
         \union
-    [type: {"VAL"},        version   : 0..MAX_VERSION, 
-                           tieBreaker: NODES] 
+    [type: {"VAL"},        version   : 0..H_MAX_VERSION, 
+                           tieBreaker: H_NODES] 
 
 HTypeOK ==  \* The type correctness invariant
     /\  msgs           \subseteq HMessage
-    /\  aliveNodes     \subseteq NODES
-    /\ \A n \in NODES: nodeRcvedAcks[n] \subseteq (NODES \ {n})
-    /\  nodeLastWriter  \in [NODES -> NODES]
-    /\  nodeLastWriteTS \in [NODES -> [version   : 0..MAX_VERSION,
-                                       tieBreaker: NODES         ]]
-    /\  nodeTS          \in [NODES -> [version   : 0..MAX_VERSION,
-                                       tieBreaker: NODES         ]]
-    /\  nodeState       \in [NODES -> {"valid", "invalid", "invalid_write", 
+    /\  aliveNodes     \subseteq H_NODES
+    /\ \A n \in H_NODES: nodeRcvedAcks[n] \subseteq (H_NODES \ {n})
+    /\  nodeLastWriter  \in [H_NODES -> H_NODES]
+    /\  nodeLastWriteTS \in [H_NODES -> [version   : 0..H_MAX_VERSION,
+                                       tieBreaker: H_NODES         ]]
+    /\  nodeTS          \in [H_NODES -> [version   : 0..H_MAX_VERSION,
+                                       tieBreaker: H_NODES         ]]
+    /\  nodeState       \in [H_NODES -> {"valid", "invalid", "invalid_write", 
                                        "write", "replay"}]
                                               
 HInit == \* The initial predicate
     /\  msgs            = {}
-    /\  aliveNodes      = NODES
-    /\  nodeRcvedAcks   = [n \in NODES |-> {}]
-    /\  nodeState       = [n \in NODES |-> "valid"]
-    /\  nodeLastWriter  = [n \in NODES |-> CHOOSE k \in NODES:
-                                           \A m \in NODES: k <= m]
-    /\  nodeTS          = [n \in NODES |-> [version |-> 0, 
+    /\  aliveNodes      = H_NODES
+    /\  nodeRcvedAcks   = [n \in H_NODES |-> {}]
+    /\  nodeState       = [n \in H_NODES |-> "valid"]
+    /\  nodeLastWriter  = [n \in H_NODES |-> CHOOSE k \in H_NODES:
+                                           \A m \in H_NODES: k <= m]
+    /\  nodeTS          = [n \in H_NODES |-> [version |-> 0, 
                                             tieBreaker |-> 
-                                             CHOOSE k \in NODES: 
-                                              \A m \in NODES: k <= m]]
-    /\  nodeLastWriteTS = [n \in NODES |-> [version |-> 0, 
+                                             CHOOSE k \in H_NODES: 
+                                              \A m \in H_NODES: k <= m]]
+    /\  nodeLastWriteTS = [n \in H_NODES |-> [version |-> 0, 
                                              tieBreaker |-> 
-                                              CHOOSE k \in NODES: 
-                                               \A m \in NODES: k <= m]]
+                                              CHOOSE k \in H_NODES: 
+                                               \A m \in H_NODES: k <= m]]
 -------------------------------------------------------------------------------------
 \* A buffer maintaining all network messages. Messages are only appended to this variable (not 
 \* removed once delivered) intentionally to check protocols tolerance in dublicates and reorderings 
 send(m) == msgs' = msgs \union {m}
 
 \* Check if all acknowledgments for a write have been received                                                  
-receivedAllAcks(n) == nodeRcvedAcks[n] = NODES \ {n}
+\*receivedAllAcks(n) == nodeRcvedAcks[n] = H_NODES \ {n}
+receivedAllAcks(n) == (aliveNodes \ {n}) \subseteq nodeRcvedAcks[n]
         
 equalTS(v1,tb1,v2,tb2) ==  \* Timestamp equality
     /\ v1 = v2
@@ -73,7 +74,7 @@ greaterTS(v1,tb1,v2,tb2) == \* Timestamp comparison
        /\  tb1 > tb2
        
 isAlive(n) == n \in aliveNodes
-
+                   
 nodeFailure(n) == \* Emulate a node failure
 \*    Make sure that there are atleast 3 alive nodes before killing a node
     /\ \E k,m \in aliveNodes: /\ k /= n 
@@ -82,15 +83,27 @@ nodeFailure(n) == \* Emulate a node failure
     /\ aliveNodes' = aliveNodes \ {n}
     /\ UNCHANGED <<msgs, nodeState, nodeTS, nodeLastWriter, 
                    nodeLastWriteTS, nodeRcvedAcks>>
+
+h_upd_not_aliveNodes ==
+    /\  UNCHANGED <<aliveNodes>>
+    
+h_upd_aliveNodes ==
+    /\ UNCHANGED <<msgs, nodeState, nodeTS, nodeLastWriter, 
+                   nodeLastWriteTS, nodeRcvedAcks>>
+h_upd_nothing ==                    
+\*h_updNothing ==
+    /\ h_upd_not_aliveNodes
+    /\ h_upd_aliveNodes
 -------------------------------------------------------------------------------------
 HRead(n) ==  \* Execute a read
     /\ nodeState[n] = "valid"
-    /\ UNCHANGED <<msgs, nodeTS, nodeState, nodeLastWriter, 
-                   aliveNodes, nodeLastWriteTS, nodeRcvedAcks>>
+    /\ h_upd_nothing
+    \*    /\ UNCHANGED <<msgs, nodeTS, nodeState, nodeLastWriter, 
+\*                   aliveNodes, nodeLastWriteTS, nodeRcvedAcks>>
              
 HWrite(n) == \* Execute a write
     /\  nodeState[n]      \in {"valid", "invalid"}
-    /\  nodeTS[n].version < MAX_VERSION
+    /\  nodeTS[n].version < H_MAX_VERSION
     /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
     /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
     /\  nodeState'        = [nodeState       EXCEPT ![n] = "write"]

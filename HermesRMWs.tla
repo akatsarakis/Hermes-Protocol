@@ -5,19 +5,19 @@ VARIABLES   Rmsgs,nodeFlagRMW      \* RMW change
                                  
 HRMessage ==  \* Invalidation msgs exchanged by the Hermes Protocol w/ RMWs  
     [type: {"RINV"},       flagRMW   : {0,1}, \* RMW change
-                           sender    : NODES,
-                           version   : 0..MAX_VERSION,
-                           tieBreaker: NODES] 
+                           sender    : H_NODES,
+                           version   : 0..H_MAX_VERSION,
+                           tieBreaker: H_NODES] 
 
 HRTypeOK ==  \* The type correctness invariant
     /\  HTypeOK
     /\  Rmsgs           \subseteq HRMessage
-    /\  nodeFlagRMW     \in [NODES -> {0,1}]
+    /\  nodeFlagRMW     \in [H_NODES -> {0,1}]
                                               
 HRInit == \* The initial predicate
     /\  HInit
     /\  Rmsgs       = {}
-    /\  nodeFlagRMW = [n \in NODES |-> 0]  \* RMW change
+    /\  nodeFlagRMW = [n \in H_NODES |-> 0]  \* RMW change
 -------------------------------------------------------------------------------------
 \* A buffer maintaining all Invalidation  messages. Messages are only appended to this variable (not 
 \* removed once delivered) intentionally to check protocols tolerance in dublicates and reorderings 
@@ -30,7 +30,7 @@ smallerTS(v1,tb1,v2,tb2) ==
             
 HRWrite(n) == \* Execute a write
     /\  nodeState[n]      \in {"valid", "invalid"}
-    /\  nodeTS[n].version + 2 <= MAX_VERSION
+    /\  nodeTS[n].version + 2 <= H_MAX_VERSION
     /\  nodeFlagRMW'      = [nodeFlagRMW     EXCEPT ![n] = 0] \* RMW change
     /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
     /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
@@ -51,7 +51,7 @@ HRWrite(n) == \* Execute a write
 \*    
 HRRMW(n) == \* Execute an RMW
     /\  nodeState[n]      \in {"valid"}
-    /\  nodeTS[n].version + 1 <= MAX_VERSION
+    /\  nodeTS[n].version + 1 <= H_MAX_VERSION
     /\  nodeFlagRMW'      = [nodeFlagRMW     EXCEPT ![n] = 1]
     /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
     /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
