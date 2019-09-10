@@ -91,15 +91,12 @@ h_upd_aliveNodes ==
     /\ UNCHANGED <<msgs, nodeState, nodeTS, nodeLastWriter, 
                    nodeLastWriteTS, nodeRcvedAcks>>
 h_upd_nothing ==                    
-\*h_updNothing ==
     /\ h_upd_not_aliveNodes
     /\ h_upd_aliveNodes
 -------------------------------------------------------------------------------------
 HRead(n) ==  \* Execute a read
     /\ nodeState[n] = "valid"
     /\ h_upd_nothing
-    \*    /\ UNCHANGED <<msgs, nodeTS, nodeState, nodeLastWriter, 
-\*                   aliveNodes, nodeLastWriteTS, nodeRcvedAcks>>
              
 HWrite(n) == \* Execute a write
     /\  nodeState[n]      \in {"valid", "invalid"}
