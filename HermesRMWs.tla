@@ -1,24 +1,45 @@
 ------------------------------- MODULE HermesRMWs -------------------------------
 EXTENDS     Hermes
             
-VARIABLES   Rmsgs,nodeFlagRMW      \* RMW change
+VARIABLES   Rmsgs,
+            nodeFlagRMW,
+            committedRMWs,
+            committedWrites
                                  
 HRMessage ==  \* Invalidation msgs exchanged by the Hermes Protocol w/ RMWs  
     [type: {"RINV"},       flagRMW   : {0,1}, \* RMW change
+                           epochID   : 0..(Cardinality(H_NODES) - 1),
                            sender    : H_NODES,
                            version   : 0..H_MAX_VERSION,
                            tieBreaker: H_NODES] 
+
+HRts == [version: 0..H_MAX_VERSION,
+         tieBreaker: H_NODES]
 
 HRTypeOK ==  \* The type correctness invariant
     /\  HTypeOK
     /\  Rmsgs           \subseteq HRMessage
     /\  nodeFlagRMW     \in [H_NODES -> {0,1}]
-                                              
+    /\  committedRMWs   \subseteq HRts
+    /\  committedWrites \subseteq HRts
+    
+HRSemanticsRMW ==  \* The invariant that an we cannot have two operations committed 
+                   \* with same versions (i.e., that read the same value unless they are both writes)
+    /\ \A x \in committedRMWs:
+        \A y \in committedWrites: /\ x.version /= y.version
+                                  /\ x.version /= y.version - 1
+    /\ \A x,y \in committedRMWs: \/ x.version /= y.version
+                                 \/ x.tieBreaker = y.tieBreaker
 HRInit == \* The initial predicate
     /\  HInit
     /\  Rmsgs       = {}
+    /\  committedRMWs   = {}
+    /\  committedWrites = {}
     /\  nodeFlagRMW = [n \in H_NODES |-> 0]  \* RMW change
+    
+    
 -------------------------------------------------------------------------------------
+
 \* A buffer maintaining all Invalidation  messages. Messages are only appended to this variable (not 
 \* removed once delivered) intentionally to check protocols tolerance in dublicates and reorderings 
 HRsend(m) == Rmsgs' = Rmsgs \union {m}  
@@ -26,95 +47,116 @@ HRsend(m) == Rmsgs' = Rmsgs \union {m}
 smallerTS(v1,tb1,v2,tb2) == 
     /\ ~equalTS(v1,tb1,v2,tb2)
     /\ ~greaterTS(v1,tb1,v2,tb2)   
+
+hr_upd_nothing ==
+    /\ UNCHANGED <<nodeFlagRMW, Rmsgs, committedRMWs, committedWrites>>
+
+hr_completeWrite(ver, tieB) ==
+    /\ committedWrites' = committedWrites \union {[version |-> ver, tieBreaker |-> tieB]} 
+    /\ UNCHANGED <<Rmsgs, nodeFlagRMW, committedRMWs>>
+
+hr_completeRMW(ver, tieB) ==
+    /\ committedRMWs' = committedRMWs \union {[version |-> ver, tieBreaker |-> tieB]} 
+    /\ UNCHANGED <<Rmsgs, nodeFlagRMW, committedWrites>>
+
+
 -------------------------------------------------------------------------------------
-            
+\* Helper functions 
+hr_upd_state(n, newVersion, newTieBreaker, newState, newAcks, flagRMW) == 
+    /\  nodeFlagRMW'      = [nodeFlagRMW     EXCEPT ![n] = flagRMW] \* RMW change
+    /\  h_upd_state(n, newVersion, newTieBreaker, newState, newAcks)
+
+hr_send_inv(n, newVersion, newTieBreaker, flagRMW) ==  
+    /\  HRsend([type        |-> "RINV",
+                epochID     |-> epochID, \* we always use the latest epochID
+                flagRMW     |-> flagRMW, \* RMW change
+                sender      |-> n,
+                version     |-> newVersion, 
+                tieBreaker  |-> newTieBreaker])              
+
+hr_upd_actions(n, newVersion, newTieBreaker, newState, newAcks, flagRMW) == \* Execute a write
+    /\  hr_upd_state(n, newVersion, newTieBreaker, newState, newAcks, flagRMW)
+    /\  hr_send_inv(n, newVersion, newTieBreaker, flagRMW)
+    /\  UNCHANGED <<aliveNodes, epochID, msgs, committedRMWs, committedWrites>>
+ 
+
+hr_upd_replay_actions(n, acks) == \* Apply a write-replay using same TS (version, Tie Breaker) 
+                                \* and either reset acks or keep already gathered acks
+    /\  hr_upd_actions(n, nodeTS[n].version, nodeTS[n].tieBreaker, "replay", acks, nodeFlagRMW[n])
+ 
+ 
+-------------------------------------------------------------------------------------
+\* Coordinator functions 
+
 HRWrite(n) == \* Execute a write
-    /\  nodeState[n]      \in {"valid", "invalid"}
-    /\  nodeTS[n].version + 2 <= H_MAX_VERSION
-    /\  nodeFlagRMW'      = [nodeFlagRMW     EXCEPT ![n] = 0] \* RMW change
-    /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
-    /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
-    /\  nodeState'        = [nodeState       EXCEPT ![n] = "write"]
-    /\  nodeTS'           = [nodeTS          EXCEPT ![n].version    = 
-                                                        nodeTS[n].version + 2, \* RMW change
-                                                    ![n].tieBreaker = n]
-    /\  nodeLastWriteTS'  = [nodeLastWriteTS EXCEPT ![n].version = 
-                                                        nodeTS[n].version + 2, \* RMW change
-                                                    ![n].tieBreaker = n]
-    /\  HRsend([type        |-> "RINV",
-              flagRMW     |-> 0,     \* RMW change
-              sender      |-> n,
-              version     |-> nodeTS[n].version + 2, \* RMW change
-              tieBreaker  |-> n])              
-    /\  UNCHANGED <<aliveNodes, msgs>>
-    
-\*    
+\*    /\  nodeState[n]      \in {"valid", "invalid"}
+    \* writes in invalid state are also supported as an optimization
+    /\  nodeState[n]            = "valid"
+    /\  nodeTS[n].version + 2 <= H_MAX_VERSION \* condition to bound execution
+    /\  hr_upd_actions(n, nodeTS[n].version + 2, n, "write", {}, 0)
+   
 HRRMW(n) == \* Execute an RMW
-    /\  nodeState[n]      \in {"valid"}
-    /\  nodeTS[n].version + 1 <= H_MAX_VERSION
-    /\  nodeFlagRMW'      = [nodeFlagRMW     EXCEPT ![n] = 1]
-    /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
-    /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
-    /\  nodeState'        = [nodeState       EXCEPT ![n] = "write"]
-    /\  nodeTS'           = [nodeTS          EXCEPT ![n].version    = 
-                                                        nodeTS[n].version + 1,
-                                                    ![n].tieBreaker = n]
-    /\  nodeLastWriteTS'  = [nodeLastWriteTS EXCEPT ![n].version = 
-                                                        nodeTS[n].version + 1,
-                                                    ![n].tieBreaker = n]
-    /\  HRsend([type        |-> "RINV",
-              flagRMW     |-> 1,   
-              sender      |-> n,
-              version     |-> nodeTS[n].version + 1, \* RMW change
-              tieBreaker  |-> n])              
-    /\  UNCHANGED <<aliveNodes, msgs>>
-                
-HRReplayWrite(n) == \* Execute a write-replay
-    /\  nodeState[n] = "invalid"
-    /\  ~isAlive(nodeLastWriter[n])
-    /\  nodeLastWriter'  = [nodeLastWriter   EXCEPT ![n] = n]
-    /\  nodeState'       = [nodeState        EXCEPT ![n] = "replay"]
-    /\  nodeRcvedAcks'   = [nodeRcvedAcks    EXCEPT ![n] = {}]
-    /\  nodeLastWriteTS' = [nodeLastWriteTS  EXCEPT ![n] = nodeTS[n]]
-    /\  HRsend([type       |-> "RINV",
-              flagRMW    |-> nodeFlagRMW[n],     \* RMW change
-              sender     |-> n,
-              version    |-> nodeTS[n].version, 
-              tieBreaker |-> nodeTS[n].tieBreaker])
-    /\  UNCHANGED <<nodeTS, aliveNodes, msgs, nodeFlagRMW>> \* RMW change
+    /\  nodeState[n]            = "valid"
+    /\  nodeTS[n].version + 1 <= H_MAX_VERSION \* condition to bound execution
+    /\  hr_upd_actions(n, nodeTS[n].version + 1, n, "write", {}, 1)
+               
+HRWriteReplay(n) == \* Execute a write-replay
+    /\  nodeState[n] \in {"write", "replay"}
+    /\  nodeWriteEpochID[n] < epochID
+    /\  ~receivedAllAcks(n) \* optimization to not replay when we have gathered acks from all alive
+    /\  nodeFlagRMW[n] = 0
+    /\  hr_upd_replay_actions(n, nodeRcvedAcks[n])
+
+HRRMWReplay(n) == \* Execute an RMW-replay
+    /\  nodeState[n] \in {"write", "replay"}
+    /\  nodeWriteEpochID[n] < epochID
+    /\  ~receivedAllAcks(n) \* optimization to not replay when we have gathered acks from all alive
+    /\  nodeFlagRMW[n] = 1
+    /\  hr_upd_replay_actions(n, {})
 
 \* Keep the HRead, HRcvAck and HSendVals the same as Hermes w/o RMWs
 HRRead(n) == 
     /\ HRead(n)
-    /\ UNCHANGED <<nodeFlagRMW, Rmsgs>>
+    /\ hr_upd_nothing 
     
 HRRcvAck(n) == 
     /\ HRcvAck(n)
-    /\ UNCHANGED <<nodeFlagRMW, Rmsgs>>
+    /\ hr_upd_nothing 
     
-HRSendVals(n) == 
+HRSendValsRMW(n) == 
+    /\ nodeFlagRMW[n] = 1
     /\ HSendVals(n)
-    /\ UNCHANGED <<nodeFlagRMW, Rmsgs>> 
-       
-HRCoordinatorActions(n) ==   \* Actions of a read/write coordinator 
+    /\ hr_completeRMW(nodeTS[n].version, nodeTS[n].tieBreaker)
+HRSendValsWrite(n) == 
+    /\ nodeFlagRMW[n] = 0
+    /\ HSendVals(n)
+    /\ hr_completeWrite(nodeTS[n].version, nodeTS[n].tieBreaker)
+
+HRSendVals(n) == 
+    \/ HRSendValsRMW(n)
+    \/ HRSendValsWrite(n)
+      
+HRCoordinatorActions(n) ==   \* Actions of a read/write/RMW coordinator 
     \/ HRRead(n)          
-    \/ HRReplayWrite(n) 
+    \/ HRRMWReplay(n)
+    \/ HRWriteReplay(n) 
     \/ HRWrite(n)      
     \/ HRRMW(n)      
     \/ HRRcvAck(n)
     \/ HRSendVals(n) 
+    
+    
 -------------------------------------------------------------------------------------               
+\* Follower functions 
 
 HRRcvWriteInv(n) ==  \* Process a received invalidation for a write
     \E m \in Rmsgs: 
         /\ m.type = "RINV"
+        /\ m.epochID  = epochID
         /\ m.sender /= n
         /\ m.flagRMW = 0 \* RMW change
         \* always acknowledge a received invalidation (irrelevant to the timestamp)
-        /\ send([type       |-> "ACK",
-                 sender     |-> n,   
-                 version    |-> m.version,
-                 tieBreaker |-> m.tieBreaker])
+        /\ h_send_inv_or_ack(n, m.version, m.tieBreaker, "ACK") 
         /\ \/ /\ greaterTS(m.version,
                             m.tieBreaker,
                             nodeTS[n].version, 
@@ -131,16 +173,16 @@ HRRcvWriteInv(n) ==  \* Process a received invalidation for a write
                  \/ /\ nodeState[n]= "write"   \* RMW change
                     /\ nodeFlagRMW[n] = 1      \* RMW change
                     /\ nodeState' = [nodeState EXCEPT ![n] = "invalid"]    \* RMW change
-           \/ /\ ~greaterTS(m.version,
-                            m.tieBreaker,
-                            nodeTS[n].version, 
-                            nodeTS[n].tieBreaker)
+           \/ /\ ~greaterTS(m.version, m.tieBreaker,
+                            nodeTS[n].version, nodeTS[n].tieBreaker)
               /\ UNCHANGED <<nodeState, nodeTS, nodeLastWriter, nodeFlagRMW>>
-        /\ UNCHANGED <<nodeLastWriteTS, aliveNodes, nodeRcvedAcks, Rmsgs>>
+        /\ UNCHANGED <<nodeLastWriteTS, aliveNodes, nodeRcvedAcks, Rmsgs, 
+                       epochID, nodeWriteEpochID, committedRMWs, committedWrites>>
  
 HRRcvRMWInv(n) ==  \* Process a received invalidation for a write
     \E m \in Rmsgs: 
         /\ m.type = "RINV"
+        /\ m.epochID  = epochID
         /\ m.sender /= n
         /\ m.flagRMW = 1        
         /\ \/ /\ greaterTS(m.version,
@@ -152,10 +194,7 @@ HRRcvRMWInv(n) ==  \* Process a received invalidation for a write
               /\ nodeTS' = [nodeTS EXCEPT ![n].version    = m.version,
                                           ![n].tieBreaker = m.tieBreaker]
               \* acknowledge a received invalidation (w/ greater timestamp)
-              /\ send([type       |-> "ACK",
-                       sender     |-> n,   
-                       version    |-> m.version,
-                       tieBreaker |-> m.tieBreaker])
+              /\ h_send_inv_or_ack(n, m.version, m.tieBreaker, "ACK") 
               /\ \/ /\ nodeState[n] \in {"valid", "invalid", "replay"}
                     /\ nodeState' = [nodeState EXCEPT ![n] = "invalid"]
                  \/ /\ nodeState[n] \in {"write", "invalid_write"} 
@@ -165,35 +204,33 @@ HRRcvRMWInv(n) ==  \* Process a received invalidation for a write
                     /\ nodeFlagRMW[n] = 1      \* RMW change
                     /\ nodeState' = [nodeState EXCEPT ![n] = "invalid"]    \* RMW change
              /\ UNCHANGED <<Rmsgs>>
-          \/ /\ equalTS(m.version,
-                         m.tieBreaker,
-                         nodeTS[n].version, 
-                         nodeTS[n].tieBreaker)
+          \/ /\ equalTS(m.version, m.tieBreaker,
+                         nodeTS[n].version, nodeTS[n].tieBreaker)
              \* acknowledge a received invalidation (w/ equal timestamp)
-             /\ send([type       |-> "ACK",
-                       sender     |-> n,   
-                       version    |-> m.version,
-                       tieBreaker |-> m.tieBreaker])
+             /\ h_send_inv_or_ack(n, m.version, m.tieBreaker, "ACK") 
              /\ UNCHANGED <<nodeState, nodeTS, nodeLastWriter, nodeFlagRMW, Rmsgs>>
-          \/ /\ smallerTS(m.version,
-                          m.tieBreaker,
-                          nodeTS[n].version, 
-                          nodeTS[n].tieBreaker)
-             /\  HRsend([type       |-> "RINV",
-                         flagRMW    |-> nodeFlagRMW[n],     \* RMW change
-                         sender     |-> n,
-                         version    |-> nodeTS[n].version, 
-                         tieBreaker |-> nodeTS[n].tieBreaker])
+          \/ /\ smallerTS(m.version, m.tieBreaker,
+                          nodeTS[n].version, nodeTS[n].tieBreaker)
+             /\ hr_send_inv(n, nodeTS[n].version, nodeTS[n].tieBreaker, nodeFlagRMW[n])
              /\ UNCHANGED <<nodeState, nodeTS, nodeLastWriter, nodeFlagRMW, msgs>>
-        /\ UNCHANGED <<nodeLastWriteTS, aliveNodes, nodeRcvedAcks>> 
+        /\ UNCHANGED <<nodeLastWriteTS, aliveNodes, nodeRcvedAcks, epochID, 
+                       nodeWriteEpochID, committedRMWs, committedWrites>> 
  
          
 \* Keep the HRcvVals the same as Hermes w/o RMWs
 HRRcvVal(n) == 
     /\ HRcvVal(n)
-    /\ UNCHANGED <<nodeFlagRMW, Rmsgs>>
+    /\ hr_upd_nothing
+    
+    
+HRFollowerWriteReplay(n) == \* Execute a write-replay when coordinator failed
+    /\  nodeState[n] = "invalid"
+    /\  ~isAlive(nodeLastWriter[n])
+    /\  hr_upd_replay_actions(n, {})
                            
+
 HRFollowerActions(n) ==  \* Actions of a write follower
+    \/ HRFollowerWriteReplay(n)
     \/ HRRcvWriteInv(n)
     \/ HRRcvRMWInv(n)
     \/ HRRcvVal(n) 
@@ -201,11 +238,13 @@ HRFollowerActions(n) ==  \* Actions of a write follower
 
 HRNodeFailure(n) == 
     /\ nodeFailure(n)
-    /\ UNCHANGED <<nodeFlagRMW, Rmsgs>>
+    /\ hr_upd_nothing
+    
     
 HRNext == \* Modeling Hermes protocol (Coordinator and Follower actions while emulating failures)
     \E n \in aliveNodes:       
             \/ HRFollowerActions(n)
             \/ HRCoordinatorActions(n)
             \/ HRNodeFailure(n) \* emulate node failures
+            
 =============================================================================

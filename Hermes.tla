@@ -47,6 +47,7 @@ HTypeOK ==  \* The type correctness invariant
     /\  epochID         \in 0..(Cardinality(H_NODES) - 1)
     /\  nodeWriteEpochID \in [H_NODES -> 0..(Cardinality(H_NODES) - 1)]
                                               
+                                              
 HInit == \* The initial predicate
     /\  msgs            = {}
     \*  membership and epoch id related
@@ -112,61 +113,54 @@ h_upd_nothing ==
     
 -------------------------------------------------------------------------------------
 
+h_upd_state(n, newVersion, newTieBreaker, newState, newAcks) == 
+    /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
+    /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = newAcks]
+    /\  nodeState'        = [nodeState       EXCEPT ![n] = newState]
+    /\  nodeWriteEpochID' = [nodeWriteEpochID EXCEPT ![n] = epochID] \* we always use the latest epochID
+    /\  nodeTS'           = [nodeTS          EXCEPT ![n].version    = newVersion, 
+                                                    ![n].tieBreaker = newTieBreaker]
+    /\  nodeLastWriteTS'  = [nodeLastWriteTS EXCEPT ![n].version    = newVersion, 
+                                                    ![n].tieBreaker = newTieBreaker]
+                                            
+h_send_inv_or_ack(n, newVersion, newTieBreaker, msgType) ==  
+    /\  send([type        |-> msgType,
+              epochID     |-> epochID, \* we always use the latest epochID
+              sender      |-> n,
+              version     |-> newVersion, 
+              tieBreaker  |-> newTieBreaker])              
+
+h_upd_actions(n, newVersion, newTieBreaker, newState, newAcks) == \* Execute a write
+    /\  h_upd_state(n, newVersion, newTieBreaker, newState, newAcks)
+    /\  h_send_inv_or_ack(n, newVersion, newTieBreaker, "INV")
+    /\  UNCHANGED <<aliveNodes, epochID>>
+ 
+
+h_upd_replay_actions(n, acks) == \* Apply a write-replay using same TS (version, Tie Breaker) 
+                                \* and either reset acks or keep already gathered acks
+    /\  h_upd_actions(n, nodeTS[n].version, nodeTS[n].tieBreaker, "replay", acks)
+ 
+
+-------------------------------------------------------------------------------------
+
 HRead(n) ==  \* Execute a read
     /\ nodeState[n] = "valid"
     /\ h_upd_nothing
-             
-             
+              
 HWrite(n) == \* Execute a write
 \*    /\  nodeState[n]      \in {"valid", "invalid"} 
     \* writes in invalid state are also supported as an optimization
     /\  nodeState[n]      \in {"valid"}
     /\  nodeTS[n].version < H_MAX_VERSION
-    /\  nodeRcvedAcks'    = [nodeRcvedAcks   EXCEPT ![n] = {}]
-    /\  nodeLastWriter'   = [nodeLastWriter  EXCEPT ![n] = n]
-    /\  nodeState'        = [nodeState       EXCEPT ![n] = "write"]
-    /\  nodeTS'           = [nodeTS          EXCEPT ![n].version    = 
-                                                        nodeTS[n].version + 1,
-                                                    ![n].tieBreaker = n]
-    /\  nodeLastWriteTS'  = [nodeLastWriteTS EXCEPT ![n].version = 
-                                                        nodeTS[n].version + 1,
-                                                    ![n].tieBreaker = n]
-    /\  nodeWriteEpochID' = [nodeWriteEpochID EXCEPT ![n] = epochID]
-    /\  send([type        |-> "INV",
-              sender      |-> n,
-              epochID     |-> epochID,
-              version     |-> nodeTS[n].version + 1, 
-              tieBreaker  |-> n])              
-    /\  UNCHANGED <<aliveNodes, epochID>>
- 
-
-HWriteReplayActions(n) == \* Apply a write-replay
-\*    /\  nodeState[n] = "invalid"
-\*    /\  ~isAlive(nodeLastWriter[n])
-    /\  nodeLastWriter'  = [nodeLastWriter   EXCEPT ![n] = n]
-\*    /\  nodeRcvedAcks'   = [nodeRcvedAcks    EXCEPT ![n] = {}]
-    /\  nodeState'       = [nodeState        EXCEPT ![n] = "replay"]
-    /\  nodeLastWriteTS' = [nodeLastWriteTS  EXCEPT ![n] = nodeTS[n]]
-    /\  nodeWriteEpochID' = [nodeWriteEpochID EXCEPT ![n] = epochID]
-    /\  send([type       |-> "INV",
-              sender     |-> n,
-              epochID    |-> epochID,
-              version    |-> nodeTS[n].version, 
-              tieBreaker |-> nodeTS[n].tieBreaker])
-    /\  UNCHANGED <<nodeTS, aliveNodes, epochID>>
-    
-\*    Required for RMWs and follower replays
-HWriteReplayActionsResetAcks(n) == \* Apply a write-replay
-    /\  nodeRcvedAcks'   = [nodeRcvedAcks    EXCEPT ![n] = {}]
-    /\  HWriteReplayActions(n) 
+    /\  h_upd_actions(n, nodeTS[n].version + 1, n, "write", {})
 
 
 HCoordWriteReplay(n) == \* Execute a write-replay after a membership re-config
     /\  nodeState[n] \in {"write", "replay"}
     /\  nodeWriteEpochID[n] < epochID
-    /\  HWriteReplayActions(n)
+    /\  ~receivedAllAcks(n) \* optimization to not replay when we have gathered acks from all alive
+    /\  h_upd_replay_actions(n, nodeRcvedAcks[n])
 
--------------------------------------------------------------------------------------     
 
 HRcvAck(n) ==   \* Process a received acknowledment
     \E m \in msgs: 
@@ -194,19 +188,16 @@ HSendVals(n) == \* Send validations once received acknowledments from all alive 
              tieBreaker  |-> nodeTS[n].tieBreaker])
     /\ UNCHANGED <<nodeTS, nodeLastWriter, nodeLastWriteTS,
                    aliveNodes, nodeRcvedAcks, epochID, nodeWriteEpochID>>
-
--------------------------------------------------------------------------------------               
-
+ 
 HCoordinatorActions(n) ==   \* Actions of a read/write coordinator 
     \/ HRead(n)          
     \/ HCoordWriteReplay(n)
-\*    \/ HReplayWrite(n) 
     \/ HWrite(n)         
     \/ HRcvAck(n)
     \/ HSendVals(n) 
-    
--------------------------------------------------------------------------------------               
 
+-------------------------------------------------------------------------------------               
+    
 HRcvInv(n) ==  \* Process a received invalidation
     \E m \in msgs: 
         /\ m.type     = "INV"
@@ -252,16 +243,16 @@ HRcvVal(n) ==   \* Process a received validation
 HFollowerWriteReplay(n) == \* Execute a write-replay when coordinator failed
     /\  nodeState[n] = "invalid"
     /\  ~isAlive(nodeLastWriter[n])
-    /\  HWriteReplayActionsResetAcks(n)
+    /\  h_upd_replay_actions(n, {}) 
 
-                       
+   
 HFollowerActions(n) ==  \* Actions of a write follower
     \/ HRcvInv(n)
     \/ HFollowerWriteReplay(n)
     \/ HRcvVal(n) 
-    
+ 
 ------------------------------------------------------------------------------------- 
-                      
+
 HNext == \* Modeling Hermes protocol (Coordinator and Follower actions while emulating failures)
     \E n \in aliveNodes:       
             \/ HFollowerActions(n)
