@@ -100,7 +100,7 @@ nodeFailure(n) == \* Emulate a node failure
 \*    Make sure that there are atleast 3 alive nodes before killing a node
     /\ Cardinality(aliveNodes) > 2
     /\ aliveNodes' = aliveNodes \ {n}
-    /\ epochID     = epochID + 1
+    /\ epochID'     = epochID + 1
     /\ UNCHANGED <<msgs, nodeState, nodeTS, nodeLastWriter, 
                    nodeLastWriteTS, nodeRcvedAcks, nodeWriteEpochID>>
 
